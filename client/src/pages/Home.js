@@ -30,7 +30,7 @@ console.log(userData);
           )}
         </div>
         {loggedIn && userData ? (
-          <div className="col-12 col-lg-3 mb-3">
+          <div className="col-4 col-lg-3 mb-3">
             <FriendList
               username={userData.me.username}
               friendCount={userData.me.friendCount}

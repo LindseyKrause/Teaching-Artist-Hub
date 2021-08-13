@@ -6,7 +6,7 @@ const Calendar = () => {
     return (
         <main>
         <section className="flex-row justify-center mb-4">
-            {/* <Calendar></Calendar> */}
+            <Calendar></Calendar>
         </section>
         </main>
     )

@@ -13,7 +13,7 @@ const Home = () => {
   const thoughts = data?.thoughts || [];
 
   const loggedIn = Auth.loggedIn();
-
+console.log(userData);
   return (
     <main>
       <div className="flex-row justify-space-between">

@@ -10,6 +10,7 @@ import { QUERY_USER, QUERY_ME } from '../utils/queries';
 import { ADD_FRIEND } from '../utils/mutations';
 import { REMOVE_FRIEND } from '../utils/mutations';
 import Auth from '../utils/auth';
+// import { removeFriendId } from '../utils/localStorage';
 
 const Profile = props => {
   const { username: userParam } = useParams();
@@ -50,15 +51,21 @@ const Profile = props => {
     } catch (e) {
       console.error(e);
     }
-    try {
-      await removeFriend({
-        variables: { id: user._id }
-      });
-    } catch (e) {
-      console.error(e);
-    }
+  }
+
+  //   const handleFriendRemove =  (friends) => {
+  //   try {
+  //     await removeFriend({
+  //       variables: { friends }
+  //     });
+   
+  //   removeFriend(friends);
+
+  // } catch (e) {
+  //   console.error(e);
+  // }
     
-  };
+  // };
 
   return (
     <div>

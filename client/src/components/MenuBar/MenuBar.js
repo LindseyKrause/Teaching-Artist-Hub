@@ -2,7 +2,7 @@ import React, {  useState, forwardRef } from 'react';
 import {List, ListItem, Collapse, Button, Drawer } from '@material-ui/core';
 import clsx from 'clsx';
 import { ExpandLess, ExpandMore } from "@material-ui/icons";
-import menuItems from '../NavSideBar';
+import menuItems from '../NavSideBar/sideBarItems';
 import { NavLink as RouterLink } from 'react-router-dom';
 import useStyles from '../MenuBar/menuBarStyle.js';
 

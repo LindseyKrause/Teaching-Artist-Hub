@@ -5,6 +5,7 @@ import { ExpandLess, ExpandMore } from "@material-ui/icons";
 import menuItems from './sideBarItems';
 import { NavLink as RouterLink } from 'react-router-dom';
 import useStyles from './menuBarStyles';
+
 const MenuBar = (props) => {
     const [ menu, setMenu ] = useState({});
     const { className, ...rest } = props;

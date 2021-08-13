@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { ApolloProvider } from '@apollo/react-hooks';
 import ApolloClient from 'apollo-boost';
 
 import Header from './components/Header';
 import Footer from './components/Footer';
+import MenuBar from './components/MenuBar/MenuBar';
 
 import Home from './pages/Home';
 import Login from './pages/Login';
@@ -12,6 +13,17 @@ import NoMatch from './pages/NoMatch';
 import SingleThought from './pages/SingleThought';
 import Profile from './pages/Profile';
 import Signup from './pages/Signup';
+
+class App extends Component {
+  render() {
+    return (
+      <BrowserRouter>
+        <MenuBar/>
+      </BrowserRouter>
+    )
+  };
+}
+
 
 const client = new ApolloClient({
   request: operation => {

@@ -8,12 +8,15 @@ import FriendList from '../components/FriendList';
 import { useQuery, useMutation } from '@apollo/react-hooks';
 import { QUERY_USER, QUERY_ME } from '../utils/queries';
 import { ADD_FRIEND } from '../utils/mutations';
+import { REMOVE_FRIEND } from '../utils/mutations';
 import Auth from '../utils/auth';
+// import { removeFriendId } from '../utils/localStorage';
 
 const Profile = props => {
   const { username: userParam } = useParams();
 
   const [addFriend] = useMutation(ADD_FRIEND);
+  const [removeFriend] = useMutation(REMOVE_FRIEND); 
   const { loading, data } = useQuery(userParam ? QUERY_USER : QUERY_ME, {
     variables: { username: userParam }
   });
@@ -48,7 +51,21 @@ const Profile = props => {
     } catch (e) {
       console.error(e);
     }
-  };
+  }
+
+  //   const handleFriendRemove =  (friends) => {
+  //   try {
+  //     await removeFriend({
+  //       variables: { friends }
+  //     });
+   
+  //   removeFriend(friends);
+
+  // } catch (e) {
+  //   console.error(e);
+  // }
+    
+  // };
 
   return (
     <div>
@@ -62,6 +79,14 @@ const Profile = props => {
             Add Friend
           </button>
         )}
+
+{userParam && (
+          <button className="btn ml-auto" onClick={handleClick}>
+            Delete Friend
+          </button>
+                      )      
+        
+        }
       </div>
 
       <div className="flex-row justify-space-between mb-3">

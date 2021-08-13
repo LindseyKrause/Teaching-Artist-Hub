@@ -43,7 +43,7 @@ const Profile = props => {
     );
   }
 
-  const handleClick = async () => {
+  const savedFriends = async () => {
     try {
       await addFriend({
         variables: { id: user._id }
@@ -53,19 +53,19 @@ const Profile = props => {
     }
   }
 
-  //   const handleFriendRemove =  (friends) => {
-  //   try {
-  //     await removeFriend({
-  //       variables: { friends }
-  //     });
+    const handleFriendRemove = async ( friendId ) => {
+    try {
+      await removeFriend({
+        variables: { friendId }
+      });
    
-  //   removeFriend(friends);
+    removeFriend(friendId);
 
-  // } catch (e) {
-  //   console.error(e);
-  // }
+  } catch (e) {
+    console.error(e);
+  }
     
-  // };
+  };
 
   return (
     <div>
@@ -75,13 +75,13 @@ const Profile = props => {
         </h2>
 
         {userParam && (
-          <button className="btn ml-auto" onClick={handleClick}>
+          <button className="btn ml-auto" onClick={savedFriends}>
             Add Friend
           </button>
         )}
 
 {userParam && (
-          <button className="btn ml-auto" onClick={handleClick}>
+          <button className="btn ml-auto" onClick={handleFriendRemove}>
             Delete Friend
           </button>
                       )      

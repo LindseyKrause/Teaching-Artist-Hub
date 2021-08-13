@@ -2,9 +2,9 @@ import React, {  useState, forwardRef } from 'react';
 import {List, ListItem, Collapse, Button, Drawer } from '@material-ui/core';
 import clsx from 'clsx';
 import { ExpandLess, ExpandMore } from "@material-ui/icons";
-import menuItems from './sideBarItems';
+import menuItems from '../NavSideBar';
 import { NavLink as RouterLink } from 'react-router-dom';
-import useStyles from './menuBarStyles';
+import useStyles from '../MenuBar/menuBarStyle.js';
 
 const MenuBar = (props) => {
     const [ menu, setMenu ] = useState({});

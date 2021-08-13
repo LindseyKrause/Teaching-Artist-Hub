@@ -1,12 +1,16 @@
+
+
 import React from 'react';
 import Calendar from '@ericz1803/react-google-calendar';
 
 
-let calendars = [
-    {calendarId: process.env.CALENDAR_ID}
-];
+require('dotenv').config()
+
 
 function GoogleCalendar() {
+    let calendars = [
+        {calendarId: process.env.CALENDAR_ID}
+    ];
     return (
         <section>
             <Calendar apiKey={process.env.API_KEY} calendars={calendars} />

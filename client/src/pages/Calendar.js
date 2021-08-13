@@ -6,7 +6,7 @@ const Calendar = () => {
     return (
         <main>
         <section className="flex-row justify-center mb-4">
-            <Calendar></Calendar>
+            <GoogleCalendar></GoogleCalendar>
         </section>
         </main>
     )

@@ -5,6 +5,7 @@ import ApolloClient from 'apollo-boost';
 
 import Header from './components/Header';
 import Footer from './components/Footer';
+import MenuBar from './components/MenuBar/MenuBar'
 
 import Home from './pages/Home';
 import Login from './pages/Login';
@@ -31,6 +32,7 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <Router>
+        
         <div className="flex-column justify-flex-start min-100-vh">
           <Header />
           <div className="container">

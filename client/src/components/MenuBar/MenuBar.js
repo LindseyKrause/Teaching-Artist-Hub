@@ -3,7 +3,7 @@ import {List, ListItem, Collapse, Button, Drawer } from '@material-ui/core';
 import clsx from 'clsx';
 import { ExpandLess, ExpandMore } from "@material-ui/icons";
 import menuItems from './menuBarStyles';
-import { NavLink as RouterLink, Router } from 'react-router-dom';
+import { NavLink as RouterLink } from 'react-router-dom';
 import useStyles from './menuBarStyles';
 
 const MenuBar = (props) => {

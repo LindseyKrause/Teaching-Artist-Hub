@@ -16,7 +16,7 @@ const Profile = props => {
   const { username: userParam } = useParams();
 
   const [addFriend] = useMutation(ADD_FRIEND);
-  const [removeFriend] = useMutation(REMOVE_FRIEND); 
+  const [removeFriend] = useMutation(REMOVE_FRIEND);
   const { loading, data } = useQuery(userParam ? QUERY_USER : QUERY_ME, {
     variables: { username: userParam }
   });
@@ -78,12 +78,12 @@ const Profile = props => {
           </button>
         )}
 
-         {userParam && (
-            <button className="btn ml-auto" onClick={handleFriendRemove}>
-              Delete Friend
-            </button>
-                      )      
-        
+        {userParam && (
+          <button className="btn ml-auto" onClick={handleFriendRemove}>
+            Delete Friend
+          </button>
+        )
+
         }
       </div>
 

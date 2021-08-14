@@ -24,7 +24,7 @@ const Header = () => {
                 Logout
               </a>
               <Link to="/calendar">Calendar</Link>
-              <Link to="/mindbody">Mindbody</Link>
+              <Link to="/home">Forum & Announcements</Link>
             </>
           ) : (
             <>

@@ -13,7 +13,6 @@ const server = new ApolloServer({
   resolvers, 
   context: authMiddleware 
 });
-
 // const cors = require('cors');
 
 server.applyMiddleware({ app });

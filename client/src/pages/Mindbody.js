@@ -8,7 +8,6 @@ import { QUERY_ME_BASIC } from "../utils/queries";
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
-import { Helmet } from "react-helmet";
 
 const useStyles = makeStyles((theme) => ({
     root: {

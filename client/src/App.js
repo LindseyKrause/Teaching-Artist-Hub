@@ -14,6 +14,7 @@ import SingleThought from './pages/SingleThought';
 import Profile from './pages/Profile';
 import Signup from './pages/Signup';
 import Calendar from './pages/Calendar';
+import Mindbody from './pages/Mindbody'
 
 const client = new ApolloClient({
   request: operation => {
@@ -43,7 +44,8 @@ function App() {
               <Route exact path="/profile/:username?" component={Profile} />
               <Route exact path="/thought/:id" component={SingleThought} />
               <Route exact path="/calendar" component={Calendar} />
-              
+              <Route exact path="/mindbody" component={Mindbody} />
+
 
               <Route component={NoMatch} />
             </Switch>

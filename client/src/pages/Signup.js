@@ -72,7 +72,7 @@ const Signup = () => {
               </button>
             </form>
 
-            {error && <div>Signup failed</div>}
+            {error && <div>Signup failed. Password must be at least 5 characters.</div>}
           </div>
         </div>
       </div>

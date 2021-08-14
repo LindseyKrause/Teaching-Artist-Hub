@@ -53,18 +53,16 @@ const Profile = props => {
     }
   }
 
-  const handleFriendRemove = async (friendId) => {
+    const handleFriendRemove = async () => {
     try {
       await removeFriend({
-        variables: { friendId }
+        variables: { friendId: user._id }
       });
-
-      removeFriend(friendId);
-
-    } catch (e) {
-      console.error(e);
-    }
-
+   
+  } catch (e) {
+    console.error(e);
+  }
+    
   };
 
   return (

@@ -1,10 +1,10 @@
 :root {
   --primary: #497573;
-  --secondary: #99f7f2;
+  --secondary: #eb2df8;
   --tertiary: #b2c2c1;
   --quatrinary: #cadbda;
   --light: #e1f5f4;
-  --dark: #6c7575;
+  --dark: #1a1b1b;
   --error: rgb(228, 46, 1);
   --border-radius: 0.3rem;
   --spacing-one: calc(1rem * 0.25);
@@ -35,7 +35,7 @@ body {
   line-height: 1.5;
   font-size: 20px;
   color: var(--dark);
-  background-color: #f3fffee1;
+  background-color: rgb(88, 84, 84);
 }
 
 h1,
@@ -124,7 +124,19 @@ nav a:hover {
   background-color: var(--secondary);
   transition: all 0.5s;
 }
-
+.btn2,
+.pill {
+  font-size: 1.3rem;
+  text-decoration: none;
+  padding: 0.5rem 1.2rem;
+  margin: 5px 0;
+  border-radius: var(--border-radius);
+  border: none;
+  color: var(--dark);
+  outline: none;
+  background-color: #4DEEEA;
+  transition: all 0.5s;
+}
 .btn:hover,
 .pill:hover {
   color: var(--secondary);
@@ -132,6 +144,17 @@ nav a:hover {
 }
 
 .btn-inline {
+  display: inline;
+
+}
+
+.btn2:hover,
+.pill:hover {
+  color: var(--secondary);
+  background-color: var(--dark);
+}
+
+.btn2-inline {
   display: inline;
 }
 

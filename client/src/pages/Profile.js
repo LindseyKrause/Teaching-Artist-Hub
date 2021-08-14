@@ -2,6 +2,7 @@ import React from 'react';
 import { Redirect, useParams } from 'react-router-dom';
 
 import ThoughtForm from '../components/ThoughtForm';
+import AddPhotoForm from '../components/AddPhotoForm';
 import ThoughtList from '../components/ThoughtList';
 import FriendList from '../components/FriendList';
 
@@ -103,7 +104,12 @@ const Profile = props => {
         </div>
       </div>
       <div className="mb-3">{!userParam && <ThoughtForm />}</div>
+      <div className="mb-3">{!userParam && <AddPhotoForm />}</div>
+      
     </div>
+    
+    
+  
   );
 };
 

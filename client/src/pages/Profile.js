@@ -9,7 +9,7 @@ import { useQuery, useMutation } from '@apollo/react-hooks';
 import { QUERY_USER, QUERY_ME } from '../utils/queries';
 import { ADD_FRIEND } from '../utils/mutations';
 import { REMOVE_FRIEND } from '../utils/mutations';
-import Auth from '../utils/auth';
+import Auth from '../utils/auth';   
 // import { removeFriendId } from '../utils/localStorage';
 
 const Profile = props => {

@@ -38,13 +38,13 @@ function App() {
           <Header />
           <div className="container">
             <Switch>
-              <Route exact path="/" component={Home} />
+              <Route exact path="/" component={Mindbody} />
               <Route exact path="/login" component={Login} />
               <Route exact path="/signup" component={Signup} />
               <Route exact path="/profile/:username?" component={Profile} />
               <Route exact path="/thought/:id" component={SingleThought} />
               <Route exact path="/calendar" component={Calendar} />
-              <Route exact path="/mindbody" component={Mindbody} />
+              <Route exact path="/home" component={Home} />
 
 
               <Route component={NoMatch} />

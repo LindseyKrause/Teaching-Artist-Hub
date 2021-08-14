@@ -69,8 +69,8 @@ export const ADD_FRIEND = gql`
 `;
 
 export const REMOVE_FRIEND = gql`
-  mutation removeFriend($id: ID!) {
-    removeFriend(id: $id) {
+  mutation removeFriend($friendId: ID!) {
+    removeFriend(friendId: $friendId) {
       _id
       username
       friends {

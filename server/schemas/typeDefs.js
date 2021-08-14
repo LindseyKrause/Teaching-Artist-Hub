@@ -45,7 +45,7 @@ const typeDefs = gql`
     addThought(thoughtText: String!): Thought
     addReaction(thoughtId: ID!, reactionBody: String!): Thought
     addFriend(friendId: ID!): User
-    removeFriend(id: ID!): User 
+    removeFriend(friendId: ID!): User 
   }
 `;
 

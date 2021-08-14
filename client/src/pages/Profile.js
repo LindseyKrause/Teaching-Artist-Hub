@@ -80,10 +80,10 @@ const Profile = props => {
           </button>
         )}
 
-{userParam && (
-          <button className="btn ml-auto" onClick={handleFriendRemove}>
-            Delete Friend
-          </button>
+         {userParam && (
+            <button className="btn ml-auto" onClick={handleFriendRemove}>
+              Delete Friend
+            </button>
                       )      
         
         }

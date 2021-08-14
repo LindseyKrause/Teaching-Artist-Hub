@@ -45,10 +45,14 @@ function App() {
 				<>
 					<GlobalStyles />
 					<Router>
+
 						<div className="flex-column justify-flex-start min-100-vh">
 							<Header />
+
 							<div className="container">
-								<Toggle theme={theme} toggleTheme={themeToggler} />
+								<div>
+									<Toggle theme={theme} toggleTheme={themeToggler} />
+								</div>
 								<Switch>
 									<Route exact path="/" component={Mindbody} />
 									<Route exact path="/login" component={Login} />

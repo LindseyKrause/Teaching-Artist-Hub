@@ -100,7 +100,21 @@ const resolvers = {
       }
 
       throw new AuthenticationError('You need to be logged in!');
+    },
+    removeFriend: async (parent, { friendId }, context) => {
+      if (context.user) {
+        const modifiedUser = await User.findOneAndUpdate(
+          { _id: context.user._id },
+          { $pull: { friends: friendId } },
+          { new: true }
+        ).populate('friends');
+
+        return modifiedUser;
+      }
+
+      throw new AuthenticationError('You need to be logged in!');
     }
+
   }
 };
 

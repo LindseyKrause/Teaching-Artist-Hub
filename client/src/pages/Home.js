@@ -13,7 +13,7 @@ const Home = () => {
   const thoughts = data?.thoughts || [];
 
   const loggedIn = Auth.loggedIn();
-
+console.log(userData);
   return (
     <main>
       <div className="flex-row justify-space-between">
@@ -30,7 +30,7 @@ const Home = () => {
           )}
         </div>
         {loggedIn && userData ? (
-          <div className="col-12 col-lg-3 mb-3">
+          <div className="col-4 col-lg-3 mb-3">
             <FriendList
               username={userData.me.username}
               friendCount={userData.me.friendCount}

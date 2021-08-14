@@ -19,7 +19,8 @@
     "@ericz1803/react-google-calendar": "^4.2.1",
     "if-env": "^1.0.4",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "styled-components": "^5.3.0"
   },
   "devDependencies": {
     "concurrently": "^5.1.0"

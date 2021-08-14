@@ -1,4 +1,9 @@
-import React from 'react';
+import React, { useState } from "react";
+import {ThemeProvider} from "styled-components";
+import  {useDarkMode} from "./components/useDarkMode"
+import { GlobalStyles } from "./components/GlobalStyles";
+import { lightTheme, darkTheme } from "./components/Theme"
+import Toggle from "./components/Toggler"
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { ApolloProvider } from '@apollo/react-hooks';
 import ApolloClient from 'apollo-boost';
@@ -29,12 +34,19 @@ const client = new ApolloClient({
 });
 
 function App() {
+  const [theme, themeToggler] = useDarkMode();
+
+  const themeMode = theme === 'light' ? lightTheme : darkTheme;
   return (
     <ApolloProvider client={client}>
+      
       <Router>
-        <div className="flex-column justify-flex-start min-100-vh">
+          <div className="flex-column justify-flex-start min-100-vh">
           <Header />
+          <ThemeProvider theme={themeMode}>
+          <GlobalStyles/>
           <div className="container">
+          <Toggle theme={theme} toggleTheme={themeToggler} />
             <Switch>
               <Route exact path="/" component={Home} />
               <Route exact path="/login" component={Login} />
@@ -48,8 +60,11 @@ function App() {
               <Route component={NoMatch} />
             </Switch>
           </div>
+          </ThemeProvider>
           <Footer />
         </div>
+   
+  
       </Router>
     </ApolloProvider>
   );

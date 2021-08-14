@@ -42,13 +42,17 @@ function App() {
 		<ApolloProvider client={client}>
       <ThemeProvider theme={themeMode}>
 				<>
-					<GlobalStyles />
-					<Router>
-						<div className="flex-column justify-flex-start min-100-vh">
-							<Header />
-							<div className="container">
-                <Toggle theme={theme} toggleTheme={themeToggler} />
-								<Switch>
+          <GlobalStyles />
+          <Router>
+
+            <div className="flex-column justify-flex-start min-100-vh">
+              <Header />
+
+              <div className="container">
+                <div>
+                  <Toggle theme={theme} toggleTheme={themeToggler} />
+                </div>
+                <Switch>
 									<Route exact path="/" component={Mindbody} />
 									<Route exact path="/login" component={Login} />
 									<Route exact path="/signup" component={Signup} />
@@ -58,7 +62,7 @@ function App() {
 									<Route exact path="/home" component={Home} />
 
 									<Route component={NoMatch} />
-								</Switch>
+                </Switch>
 							</div>
 							<Footer />
 						</div>

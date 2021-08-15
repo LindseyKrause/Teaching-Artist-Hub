@@ -1,9 +1,18 @@
 import React from 'react';
+import Calendar from '@ericz1803/react-google-calendar';
 
+const API_KEY = 'AIzaSyCTLwpyb-j-woXYEA2vF04Y2cBPLBydvto';
 
-const GoogleCalendar = () => {
+let calendars = [
+    { calendarId: 'c_328os62b0238c6h93arsgpj4jo@group.calendar.google.com' }
+];
+
+function GoogleCalendar () {
     return (
-        <iframe title="Teaching Artist Hub Calendar" src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23616161&ctz=America%2FPhoenix&src=Y18zMjhvczYyYjAyMzhjNmg5M2Fyc2dwajRqb0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%233F51B5&showNav=1&showPrint=0&showTabs=0&showCalendars=1&title=TAH"></iframe>
+        <section>
+            <Calendar apiKey={API_KEY} calendars={calendars} />
+        </section>
     );
 }
+
 export default GoogleCalendar;

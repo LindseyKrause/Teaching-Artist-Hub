@@ -18,6 +18,12 @@ const useStyles = makeStyles((theme) => ({
 		textAlign: "center",
 		color: theme.palette.text.secondary,
 	},
+	iframe: {
+		width: "100%",
+		height: "380",
+		frameBorder: "0",
+		allowtransparency: "true",
+	}
 }));
 
 const Mindbody = () => {
@@ -86,7 +92,9 @@ const Mindbody = () => {
 						</Paper>
 					</Grid>
 					<Grid item xs={3}>
-						<Paper className={classes.paper}>Linked In</Paper>
+						<Paper className={classes.paper}>
+							<iframe src="https://open.spotify.com/embed/playlist/0bzoCZebq8KKqYRtCs0abQ"allow="encrypted-media"></iframe>
+						</Paper>
 					</Grid>
 					<Grid item xs={3}>
 						<Paper className={classes.paper}>TicTok</Paper>

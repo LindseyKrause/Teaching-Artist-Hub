@@ -2,11 +2,11 @@ export default {
     "data" : [
         {
             "name": "Home",
-            "url": "/home"
+            "url": "/mindbody"
         },
         {
             "name": "Forum & Announcements",
-            "url": "/forum & announcements"
+            "url": "/home"
               
         },
         {

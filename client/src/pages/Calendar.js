@@ -1,15 +1,18 @@
 import React from 'react';
-import GoogleCalendar from "../components/Calendar";
+import Calendar from '@ericz1803/react-google-calendar';
 
-const Calendar = () => {
-   
+const API_KEY = 'AIzaSyCTLwpyb-j-woXYEA2vF04Y2cBPLBydvto';
+
+let calendars = [
+    {calendarId: 'c_328os62b0238c6h93arsgpj4jo@group.calendar.google.com'}
+];
+
+function GoogleCalendar() {
     return (
-        <main>
-        <section className="flex-row justify-center mb-4">
-            <GoogleCalendar></GoogleCalendar>
+        <section>
+            <Calendar apiKey={API_KEY} calendars={calendars} />
         </section>
-        </main>
-    )
+    );
 }
 
-export default Calendar;
+export default GoogleCalendar

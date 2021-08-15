@@ -25,6 +25,8 @@ const Header = () => {
               </a>
               <Link to="/calendar">Calendar</Link>
               <Link to="/home">Forum & Announcements</Link>
+              <Link to="/forms">Forms</Link>
+
             </>
           ) : (
             <>

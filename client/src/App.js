@@ -13,6 +13,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import MenuBar from './components/MenuBar/MenuBar'
 
+import Forms from "./pages/Forms"
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import NoMatch from "./pages/NoMatch";
@@ -61,7 +62,7 @@ function App() {
 									<Route exact path="/thought/:id" component={SingleThought} />
 									<Route exact path="/calendar" component={Calendar} />
 									<Route exact path="/home" component={Home} />
-
+									<Route exact path="/forms" component={Forms} />
 									<Route component={NoMatch} />
 								</Switch>
 							</div>

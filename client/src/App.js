@@ -2,7 +2,8 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { ApolloProvider } from "@apollo/react-hooks";
 import ApolloClient from "apollo-boost";
-import React, { useState, useEffect } from "react";
+import React from "react";
+
 import { ThemeProvider } from "styled-components";
 import { useDarkMode } from "./components/useDarkMode";
 import { GlobalStyles } from "./components/globalStyles";
@@ -11,7 +12,7 @@ import Toggle from "./components/Toggler"
 
 import Header from './components/Header';
 import Footer from './components/Footer';
-import MenuBar from './components/MenuBar/MenuBar'
+
 
 import Home from "./pages/Home";
 import Login from "./pages/Login";
@@ -36,6 +37,7 @@ const client = new ApolloClient({
 });
 
 function App() {
+  
 	const [theme, themeToggler, mountedComponent] = useDarkMode();
 	const themeMode = theme === "light" ? lightTheme : darkTheme;
 	if (!mountedComponent) return <div />
@@ -45,10 +47,10 @@ function App() {
 				<>
 					<GlobalStyles />
 					<Router>
-
+          
 						<div className="flex-column justify-flex-start min-100-vh">
 							<Header />
-
+             
 							<div className="container">
 								<div>
 									<Toggle theme={theme} toggleTheme={themeToggler} />

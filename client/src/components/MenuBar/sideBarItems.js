@@ -6,16 +6,8 @@ export default {
         },
         {
             "name": "Forum & Announcements",
-            "children": [
-                {
-                    "name": "Forum", 
-                    "url": "/forum"
-                },
-                {
-                    "name": "Announcements", 
-                    "url": "/announcements"
-                }
-            ]
+            "url": "/Forum & Announcements"
+              
         },
         {
             "name": "Class Calls",

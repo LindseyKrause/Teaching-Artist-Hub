@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import Auth from '../../utils/auth';
+import MenuBar from '../MenuBar/index';
 
 const Header = () => {
   const logout = event => {
@@ -15,7 +16,7 @@ const Header = () => {
         <Link to="/">
           <h1>Teaching Artist Hub</h1>
         </Link>
-
+        <MenuBar />
         <nav className="text-center">
           {Auth.loggedIn() ? (
             <>

@@ -1,21 +1,9 @@
-
-
 import React from 'react';
-import Calendar from '@ericz1803/react-google-calendar';
 
 
-require('dotenv').config()
-
-
-function GoogleCalendar() {
-    let calendars = [
-        {calendarId: process.env.CALENDAR_ID}
-    ];
+const GoogleCalendar = () => {
     return (
-        <section>
-            <Calendar apiKey={process.env.API_KEY} calendars={calendars} />
-        </section>
+        <iframe title="Teaching Artist Hub Calendar" src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23616161&ctz=America%2FPhoenix&src=Y18zMjhvczYyYjAyMzhjNmg5M2Fyc2dwajRqb0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%233F51B5&showNav=1&showPrint=0&showTabs=0&showCalendars=1&title=TAH"></iframe>
     );
 }
-
 export default GoogleCalendar;

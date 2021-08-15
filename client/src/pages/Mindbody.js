@@ -10,20 +10,22 @@ import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 
 const useStyles = makeStyles((theme) => ({
-	root: {
-		flexGrow: 1,
-	},
 	paper: {
-		padding: theme.spacing(2),
-		textAlign: "center",
-		color: theme.palette.text.secondary,
+		padding: theme.spacing(1),
 	},
 	iframe: {
 		width: "100%",
 		height: "380",
 		frameBorder: "0",
 		allowtransparency: "true",
-	}
+	},
+	Grid: {
+		padding: "50px",
+		direction: "row",
+		justifyContent: "space-around",
+		alignItems: "flex-start",
+		margin: "50px"
+	},
 }));
 
 const Mindbody = () => {
@@ -34,14 +36,8 @@ const Mindbody = () => {
 	return (
 		<main>
 			<div className={classes.root}>
-				<Grid
-					container
-					spacing={3}
-					direction="row"
-					justifyContent="space-around"
-					alignItems="center"
-				>
-					<Grid item xs={6}>
+				<Grid container>
+					<Grid item xs12>
 						<Paper className={classes.paper}>
 							Class Schedule
 							<healcode-widget
@@ -52,15 +48,15 @@ const Mindbody = () => {
 							></healcode-widget>
 						</Paper>
 					</Grid>
-					<Grid item xs={3}>
+					<Grid item xs>
 						<Paper className={classes.paper}>
 							Facebook
 							<div
 								className="fb-page"
 								data-href="https://www.facebook.com/PhoenixCenterForTheArts/"
 								data-tabs="timeline"
-								data-width="400px"
-								data-height="500px"
+								data-width="500px"
+								data-height="600px"
 								data-small-header="false"
 								data-adapt-container-width="true"
 								data-hide-cover="true"
@@ -77,13 +73,13 @@ const Mindbody = () => {
 							</div>
 						</Paper>
 					</Grid>
-					<Grid item xs={3}>
+					<Grid item xs>
 						<Paper className={classes.paper}>
 							Twitter
 							<a
 								className="twitter-timeline"
 								data-width="500"
-								data-height="400"
+								data-height="600"
 								data-theme="dark"
 								href="https://twitter.com/PhxCenterArts?ref_src=twsrc%5Etfw"
 							>
@@ -91,12 +87,15 @@ const Mindbody = () => {
 							</a>
 						</Paper>
 					</Grid>
-					<Grid item xs={3}>
+					<Grid item xs>
 						<Paper className={classes.paper}>
-							<iframe src="https://open.spotify.com/embed/playlist/0bzoCZebq8KKqYRtCs0abQ"allow="encrypted-media"></iframe>
+							<iframe
+								src="https://open.spotify.com/embed/playlist/0bzoCZebq8KKqYRtCs0abQ"
+								allow="encrypted-media"
+							></iframe>
 						</Paper>
 					</Grid>
-					<Grid item xs={3}>
+					<Grid item xs>
 						<Paper className={classes.paper}>TicTok</Paper>
 					</Grid>
 				</Grid>

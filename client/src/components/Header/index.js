@@ -8,10 +8,9 @@ const Header = () => {
     event.preventDefault();
     Auth.logout();
   };
-
   return (
-    <header id="headerbg" className="bg-secondary mb-4 py-2 flex-row align-center">
-      <div className="container flex-row justify-space-between-lg justify-center align-center">
+    <header>
+      <div className="container flex-row justify-space-between-lg justify-center align-center white content.navbar transparent.navbar brand">
         <Link to="/">
           <h1>Teaching Artist Hub</h1>
         </Link>

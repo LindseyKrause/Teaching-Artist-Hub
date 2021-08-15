@@ -6,7 +6,7 @@ export default {
         },
         {
             "name": "Forum & Announcements",
-            "url": "/Forum & Announcements"
+            "url": "/forum & announcements"
               
         },
         {

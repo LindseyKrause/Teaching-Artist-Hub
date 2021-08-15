@@ -11,7 +11,7 @@ import Toggle from "./components/Toggler"
 
 import Header from './components/Header';
 import Footer from './components/Footer';
-import MenuBar from './components/MenuBar/MenuBar'
+// import MenuBar from './components/MenuBar/MenuBar'
 
 import Home from "./pages/Home";
 import Login from "./pages/Login";

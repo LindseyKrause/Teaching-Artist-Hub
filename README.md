@@ -45,7 +45,7 @@ AS AN .....
 <br>
 
 ## Deployment
-https://infinite-ridge-45545.herokuapp.com/TBD - Replace
+https://teaching-artist-hub.herokuapp.com/
 
 
 
@@ -70,4 +70,4 @@ This application was created by Lindsey Krause, Christi Mc, Joseph Porzaazo, Van
 <br>
 (mailto: kelliewerrell@gmail.com, Lindsey@lindsey.com, Vanessa@Vanessa.com, joe@joe.com, Christi@christi.com) 
 <br>
- [GitHub Kellie Werrell](https://github.com/Kwerrell73), [GitHub Vanessa McGuire](https://github.com/Kwerrell73), [GitHub Christi Mc](https://github.com/Kwerrell73), [GitHub Joe P](https://github.com/Kwerrell73), [GitHub Lindsey Krause](https://github.com/Kwerrell73)<br />
+ [GitHub Kellie Werrell](https://github.com/Kwerrell73), [GitHub Vanessa McGuire](https://github.com/Kwerrell73), [GitHub Christi Mc](https://github.com/Kwerrell73), [GitHub Joe P](https://github.com/noreaster24), [GitHub Lindsey Krause](https://github.com/LindseyKrause)<br />

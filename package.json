@@ -26,6 +26,7 @@
     "react-dom": "^16.14.0"
   },
   "devDependencies": {
-    "concurrently": "^5.1.0"
+    "concurrently": "^5.1.0",
+    "webpack-pwa-manifest": "^4.3.0"
   }
 }

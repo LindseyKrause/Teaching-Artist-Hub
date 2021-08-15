@@ -63,6 +63,8 @@ const Profile = props => {
       console.error(e);
     }
 
+    // const [buttonText, setButtonText] = useState("Add Friendo Cart");
+
   };
 
   return (

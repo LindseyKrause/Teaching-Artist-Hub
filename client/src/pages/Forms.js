@@ -1,4 +1,8 @@
 import React from 'react';
+import EventNoteIcon from '@material-ui/icons/EventNote';
+import OpenInBrowserIcon from '@material-ui/icons/OpenInBrowser';
+import EmailIcon from '@material-ui/icons/Email';
+import ChromeReaderModeIcon from '@material-ui/icons/ChromeReaderMode';
 
 
 const Forms = () => (
@@ -8,26 +12,26 @@ const Forms = () => (
         <br></br>
         <a href="https://drive.google.com/drive/folders/1mb3Lq3XdxE8r-Rkys3MtyeKOSxZ-R5Tm?usp=sharing">
             <div className="form-btn" type="submit"></div>
-           <p>📝 Download Administrator Forms</p> 
+           <p> <ChromeReaderModeIcon/> Download Administrator Forms</p> 
         </a>
         <br></br>
 
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSfVIjyg-9rd_VmKDW3cGzsYBxYZZgq4GGLVSAkAm-m2bMQFNw/viewform?usp=sf_link">
             <div className="form-btn" type="submit"></div>
-            <p>📝 Upload Administrator Forms</p>
+            <p><OpenInBrowserIcon/> Upload Administrator Forms</p>
         </a>
         <br></br>
 
         <a href="https://drive.google.com/drive/folders/1-dSjyb0Ocr50-8aAVhCJ1Ft_SDBuap8s?usp=sharing">
-            <div className="form-btn" style="hover: width 16%" type="submit"></div>
-            <p>📝 Class Calls and Proposals</p>
+            <div className="form-btn" type="submit"></div>
+            <p><EventNoteIcon/> Class Calls and Proposals</p>
         </a>
         <br></br>
         
         <a href="mailto:centralartsalliance@bill.com, krause@phoenixcenterforthearts.org,
                  j.valiente@phoenixcenterforthearts.org">
             <div className="form-btn" type="submit"></div>
-            <p>📧 Submit Finance Forms</p>
+            <p><EmailIcon/>  Submit Finance Forms</p>
         </a>
         </form>
 );

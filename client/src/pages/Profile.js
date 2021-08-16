@@ -11,11 +11,6 @@ import { QUERY_USER, QUERY_ME } from '../utils/queries';
 import { ADD_FRIEND } from '../utils/mutations';
 import { REMOVE_FRIEND } from '../utils/mutations';
 import Auth from '../utils/auth';   
-<<<<<<< HEAD
-import { startCase } from 'lodash';
-// import { removeFriendId } from '../utils/localStorage';
-=======
->>>>>>> 5481de0dbe7f7d0c80b5599fd1def60c23eb465f
 
 const Profile = props => {
   const { username: userParam } = useParams();

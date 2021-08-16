@@ -5,13 +5,13 @@ import Auth from "../utils/auth";
 import { useQuery } from "@apollo/react-hooks";
 import { QUERY_ME_BASIC } from "../utils/queries";
 
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles, createTheme } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 
 const useStyles = makeStyles((theme) => ({
-	paper: {
-		padding: theme.spacing(1),
+	Paper: {
+		padding: theme.spacing(8),
 	},
 	iframe: {
 		width: "100%",
@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
 		direction: "row",
 		justifyContent: "space-around",
 		alignItems: "flex-start",
-		margin: "50px"
+		margin: theme.spacing(10),
 	},
 }));
 
@@ -37,7 +37,8 @@ const Mindbody = () => {
 		<main>
 			<div className={classes.root}>
 				<Grid container>
-					<Grid item xs12>
+					<Grid item lg>
+						<Grid item lg>
 						<Paper className={classes.paper}>
 							Class Schedule
 							<healcode-widget
@@ -46,9 +47,11 @@ const Mindbody = () => {
 								data-widget-id="ea1646006627"
 								data-widget-version="1"
 							></healcode-widget>
-						</Paper>
+							</Paper>
+						</Grid>
 					</Grid>
 					<Grid item xs>
+						<Grid item xs>
 						<Paper className={classes.paper}>
 							Facebook
 							<div
@@ -71,7 +74,8 @@ const Mindbody = () => {
 									</a>
 								</blockquote>
 							</div>
-						</Paper>
+							</Paper>
+						</Grid>
 					</Grid>
 					<Grid item xs>
 						<Paper className={classes.paper}>
@@ -94,9 +98,6 @@ const Mindbody = () => {
 								allow="encrypted-media"
 							></iframe>
 						</Paper>
-					</Grid>
-					<Grid item xs>
-						<Paper className={classes.paper}>TicTok</Paper>
 					</Grid>
 				</Grid>
 			</div>

@@ -2,21 +2,38 @@
 
 
 ## Description
-🔍TBD
+🔍Landing page for contracted teaching artists to communicate with each other. 
 <br>   
 
 ## Built With
 <p>
+    <img src="https://img.shields.io/badge/React-lightblue"  />
     <img src="https://img.shields.io/badge/HTML-green"  />
     <img src="https://img.shields.io/badge/CSS-blue"  />
     <img src="https://img.shields.io/badge/javascript-yellow" />
     <img src="https://img.shields.io/badge/node-green" />
     <img src="https://img.shields.io/badge/express-orange" />
+    <img src="https://img.shields.io/badge/MaterialUI-blue"  />
     <img src="https://img.shields.io/badge/Heroku-purple" />
     <img src="https://img.shields.io/badge/MongoDB-blue"  />
     <img src="https://img.shields.io/badge/mongoose-red"  />
     <img src="https://img.shields.io/badge/graphql-blue"  />
     <img src="https://img.shields.io/badge/ApolloServer-yellow"  />
+    <br/>
+    <img src = "https://i.imgur.com/9tGztI3.png" width="45" height="45" />
+    <img src = "https://i.imgur.com/bETcokI.png" width="45" height="45" />
+    <img src = "https://i.imgur.com/BWlZ9rc.jpg" width="65" height="55" />
+    <img src = "https://i.imgur.com/66s2ERk.png" width="40" height="45" />
+    <img src = "https://i.imgur.com/9oMswTL.png" width="45" height="45" />
+    <img src = "https://i.imgur.com/EY9Fj93.png" width="45" height="45" />
+    <img src = "https://i.imgur.com/PXjpcCH.png" width="45" height="45" />
+    <img src = "https://i.imgur.com/HHTAmQd.jpg" width="45" height="45" />
+    <img src = "https://i.imgur.com/69olifp.png" width="85" height="45" />
+    <img src = "https://i.imgur.com/ElhJxpj.png" width="45" height="45" />
+
+
+
+ 
     
    
 </p>
@@ -24,7 +41,7 @@
 <br>   
 
 ## User Story
-AS AN .....
+As manager of an art studio, I need a professional and secure website that contracted teaching artists can log into to  view announcements, resources, and forms; communicate with each other via forum; upload documentation; view our social media feeds; and view a google calendar for the virtual class schedule. 
 
 <br>
   

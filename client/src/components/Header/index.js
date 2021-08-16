@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import Auth from '../../utils/auth';
 import MenuBar from '../MenuBar/index';
 
+import BurgerMenu from '../BurgerMenu/index'
 const Header = () => {
   const logout = event => {
     event.preventDefault();
@@ -17,6 +18,9 @@ const Header = () => {
           <h1>Teaching Artist Hub</h1>
         </Link>
         <MenuBar />
+        <div>
+          <BurgerMenu />
+        </div>
         <nav className="text-center">
           {Auth.loggedIn() ? (
             <>

@@ -104,6 +104,15 @@ nav a:hover {
   background-color: var(--dark);
 }
 
+.form-btn p {
+  color: black;
+}
+ .form-btn p:hover {
+    color: var(--secondary);
+    background-color: var(--dark);
+    width: 23%;
+  }
+
 .page-title {
   text-align: center;
   width: 100%;

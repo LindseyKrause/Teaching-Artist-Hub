@@ -1,14 +1,16 @@
 import React from 'react';
 import GoogleCalendar from "../components/Calendar";
 
-const Calendar = () => {
-   
+function Calendar() {
+
     return (
-        <main>
-        <section className="flex-row justify-center mb-4">
-            <GoogleCalendar></GoogleCalendar>
-        </section>
-        </main>
+        <div className="calendar-widget">
+            <section>
+                <div className="flex-row justify-center mb-4">
+                    <GoogleCalendar />
+                </div>
+            </section>
+        </div>
     )
 }
 

@@ -42,7 +42,7 @@ import $ from 'jquery';
       formData.append("file", this.state.picture);
   
       $.ajax({
-        url: "/some/api/endpoint",
+        url: "/http://localhost:3000",
         method: "POST",
         data: formData,
         cache: false,

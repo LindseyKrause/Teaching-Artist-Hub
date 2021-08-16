@@ -23,9 +23,10 @@
     "@material-ui/icons": "^4.11.2",
     "if-env": "^1.0.4",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^16.14.0"
   },
   "devDependencies": {
-    "concurrently": "^5.1.0"
+    "concurrently": "^5.1.0",
+    "webpack-pwa-manifest": "^4.3.0"
   }
 }

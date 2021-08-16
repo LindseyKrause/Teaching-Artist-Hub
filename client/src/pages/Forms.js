@@ -19,7 +19,7 @@ const Forms = () => (
         <br></br>
 
         <a href="https://drive.google.com/drive/folders/1-dSjyb0Ocr50-8aAVhCJ1Ft_SDBuap8s?usp=sharing">
-            <div className="form-btn" type="submit"></div>
+            <div className="form-btn" style="hover: width 16%" type="submit"></div>
             <p>📝 Class Calls and Proposals</p>
         </a>
         <br></br>

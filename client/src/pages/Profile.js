@@ -11,8 +11,11 @@ import { QUERY_USER, QUERY_ME } from '../utils/queries';
 import { ADD_FRIEND } from '../utils/mutations';
 import { REMOVE_FRIEND } from '../utils/mutations';
 import Auth from '../utils/auth';   
+<<<<<<< HEAD
 import { startCase } from 'lodash';
 // import { removeFriendId } from '../utils/localStorage';
+=======
+>>>>>>> 5481de0dbe7f7d0c80b5599fd1def60c23eb465f
 
 const Profile = props => {
   const { username: userParam } = useParams();
@@ -40,7 +43,7 @@ const Profile = props => {
   if (!user?.username) {
     return (
       <h4>
-        You need to be logged in to see this. Use the navigation links above to sign up or log in!
+        You need to be logged in to see this. Please sign up or log in!
       </h4>
     );
   }
@@ -73,7 +76,7 @@ const Profile = props => {
         <h2 className="bg-dark text-secondary p-3 display-inline-block">
           Viewing {userParam ? `${user.username}'s` : 'your'} profile.
         </h2>
-
+        
         {userParam && (
           <button className="btn ml-auto" onClick={savedFriends}>
             Add Friend

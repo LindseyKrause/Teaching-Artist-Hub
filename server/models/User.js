@@ -31,8 +31,15 @@ const userSchema = new Schema(
         type: Schema.Types.ObjectId,
         ref: 'User'
       }
+    ],
+     photo: [
+      {
+        type: Schema.Types.ObjectId,
+        ref: 'photo'
+      }
     ]
-  },
+  }, 
+
   {
     toJSON: {
       virtuals: true

@@ -69,7 +69,7 @@ const Mindbody = () => {
 									cite="https://www.facebook.com/PhoenixCenterForTheArts/"
 									className="fb-xfbml-parse-ignore"
 								>
-									<a href="https://www.facebook.com/PhoenixCenterForTheArts/">
+									<a href="https://www.facebook.com/PhoenixCenterForTheArts/" data-lazy="true">
 										Phoenix Center For The Arts
 									</a>
 								</blockquote>
@@ -85,19 +85,14 @@ const Mindbody = () => {
 								data-width="500"
 								data-height="600"
 								data-theme="dark"
-								href="https://twitter.com/PhxCenterArts?ref_src=twsrc%5Etfw"
+								href="https://twitter.com/PhxCenterArts?ref_src=twsrc%5Etfw" data-tweet-limit="3"
 							>
 								Tweets by PhxCenterArts
 							</a>
 						</Paper>
 					</Grid>
 					<Grid item xs>
-						<Paper className={classes.paper}>
-							<iframe
-								src="https://open.spotify.com/embed/playlist/0bzoCZebq8KKqYRtCs0abQ"
-								allow="encrypted-media"
-							></iframe>
-						</Paper>
+						
 					</Grid>
 				</Grid>
 			</div>

@@ -216,6 +216,10 @@ nav a:hover {
 	font-size: 1.4rem;
 }
 
+#PostsandAnnouncements{
+	font-size: 12px;
+}
+
 /* FORM */
 .form-label,
 .form-input,

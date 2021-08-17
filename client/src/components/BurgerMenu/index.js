@@ -27,13 +27,13 @@ import Forum from "@material-ui/icons/Forum";
 import Button from "@material-ui/core/Button";
 
 const StyledSearch = styled("div")(({ theme }) => ({
-  position: "left",
+  position: "right",
   borderRadius: theme.shape.borderRadius,
   backgroundColor: alpha(theme.palette.primary.main, 0.15),
   "&:hover": {
     backgroundColor: alpha(theme.palette.primary.main, 0.25),
   },
-  marginRight: theme.spacing(2),
+  marginRight: theme.spacing(2, 3),
   marginLeft: 0,
   width: "100%",
   [theme.breakpoints.up("sm")]: {
@@ -43,9 +43,9 @@ const StyledSearch = styled("div")(({ theme }) => ({
 }));
 
 const SearchIconWrapper = styled("div")(({ theme }) => ({
-  padding: theme.spacing(0, 2),
+  padding: theme.spacing(0,0),
   height: "100%",
-  position: "absolute",
+  position: "in front of",
   pointerEvents: "none",
   display: "absolute",
   alignItems: "center",
@@ -69,10 +69,12 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 //search as JSX
 const search = (
   <StyledSearch>
+    
     <SearchIconWrapper>
       {" "}
       <SearchIcon />{" "}
     </SearchIconWrapper>
+    
     <StyledInputBase
       placeholder="Type Search Here"
       inputProps={{ "aria-label": "search" }}
@@ -176,20 +178,21 @@ export default function MainNavigation() {
                   <ListItemText primary="Logout" />
                 </ListItem>
 
-                <ListItem button>
+                <ListItem button component={Link} href="/calendar">
                   <ListItemIcon>
                     <CalendarToday sx={{ color: "primary.main" }} />
                   </ListItemIcon>
                   <ListItemText primary="Calendar" />
                 </ListItem>
                 
-                <ListItem button>
+                <ListItem button component={Link} href="/home">
                   <ListItemIcon>
                     <Forum sx={{ color: "primary.main" }} />
                   </ListItemIcon>
                   <ListItemText primary="Forums & Announcements" />
                 </ListItem>
-                <ListItem button>
+
+                <ListItem button component={Link} href="/forms">
                   <ListItemIcon>
                     <Web sx={{ color: "primary.main" }} />
                   </ListItemIcon>

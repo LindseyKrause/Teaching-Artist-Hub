@@ -22,11 +22,11 @@ console.log(userData);
             <ThoughtForm />
           </div>
         )}
-        <div className={`col-12 mb-3 ${loggedIn && 'col-lg-8'}`}>
+        <div id="PostsandAnnouncements"className={`col-12 mb-3 ${loggedIn && 'col-lg-8'}`}>
           {loading ? (
             <div>Loading...</div>
           ) : (
-            <ThoughtList thoughts={thoughts} title="Some Feed for Thought(s)..." />
+            <ThoughtList thoughts={thoughts} title="Posts and Announcements..." />
           )}
         </div>
         {loggedIn && userData ? (

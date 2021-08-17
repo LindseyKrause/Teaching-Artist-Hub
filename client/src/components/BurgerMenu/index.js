@@ -125,7 +125,7 @@ export default function MainNavigation() {
             {/* The outside of the drawer */}
             <Drawer
               //from which side the drawer slides in
-              anchor="right"
+              anchor="left"
               //if open is true --> drawer is shown
               open={open}
               //function that is called when the drawer should close
@@ -137,7 +137,7 @@ export default function MainNavigation() {
                 <Box sx={{
                   p: 2,
                   height: 1,
-                  backgroundColor: "#dbc8ff",
+                  backgroundColor: "#e14eca",
                 }}>
 
                   {/* when clicking the icon it calls the function toggleDrawer and closes the drawer by setting the variable open to false */}

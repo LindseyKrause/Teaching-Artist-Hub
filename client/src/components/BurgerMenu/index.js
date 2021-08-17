@@ -24,8 +24,9 @@ import MeetingRoom from "@material-ui/icons/MeetingRoom";
 import CalendarToday from "@material-ui/icons/CalendarToday";
 import Web from "@material-ui/icons/Web";
 import Forum from "@material-ui/icons/Forum";
-import Button from "@material-ui/core/Button";
-import Psychology from "@material-ui/icons/Psychology";
+import Home from "@material-ui/icons/Home";
+// importing Psychology icon isn't working so trying HomeIcon
+// import Psychology from "@material-ui/icons/Psychology";
 
 
 export default function MainNavigation() {
@@ -105,6 +106,7 @@ export default function MainNavigation() {
               <Divider sx={{ mb: 2 }} />
 
               <Box sx={{ mb: 2 }}>
+
                 <ListItem button component={Link} href="/profile">
                   <ListItemIcon>
                     <AccountCircle sx={{ color: "primary.main" }} />
@@ -119,9 +121,9 @@ export default function MainNavigation() {
                   <ListItemText primary="Forums & Announcements" />
                 </ListItem>
 
-                <ListItem button component={Link} href="/mindbody">
+                <ListItem button component={Link} href="/">
                   <ListItemIcon>
-                    <Psychology sx={{ color: "primary.main" }} />
+                    <Home sx={{ color: "primary.main" }} />
                   </ListItemIcon>
                   <ListItemText primary="Mindbody" />
                 </ListItem>

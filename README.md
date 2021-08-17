@@ -2,7 +2,7 @@
 
 
 ## Description
-🔍Landing page for contracted teaching artists to communicate with each other. 
+🔍Communications platform for aspiring artists and professors.
 <br>   
 
 ## Built With

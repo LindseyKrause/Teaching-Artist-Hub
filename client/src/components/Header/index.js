@@ -19,21 +19,15 @@ const Header = () => {
         <nav className="text-center">
           {Auth.loggedIn() ? (
             <>
-              {/* <Link to="/profile">View Profile</Link>
-              <a href="/" onClick={logout}>
-                Logout
-              </a>
-              <Link to="/calendar">Calendar</Link>
-              <Link to="/home">Forum & Announcements</Link>
-              <Link to="/forms">Forms</Link> */}
               <BurgerMenu />
             </>
           ) : (
             <>
-            {/* commented out because these are on the 
-            burgerMenu  will ask team if this is where they want them. */}
-              {/* <Link to="/login">Login</Link>
-              <Link to="/signup">Signup</Link> */}
+            <a href="/" onClick={logout}>
+                Logout
+              </a>
+              <Link to="/login">Login</Link>
+              <Link to="/signup">Signup</Link>
             </>
             
           )}

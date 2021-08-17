@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { styled, alpha } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
-import Typography from "@material-ui/core/Typography";
+
+// import Typography from "@material-ui/core/Typography";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import Container from "@material-ui/core/Container";
@@ -17,8 +18,7 @@ import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 
-import InputBase from "@material-ui/core/InputBase";
-import SearchIcon from "@material-ui/icons/Search";
+// icons used for nav drawer
 import AccountCircle from "@material-ui/icons/AccountCircle";
 import MeetingRoom from "@material-ui/icons/MeetingRoom";
 import CalendarToday from "@material-ui/icons/CalendarToday";
@@ -26,61 +26,6 @@ import Web from "@material-ui/icons/Web";
 import Forum from "@material-ui/icons/Forum";
 import Button from "@material-ui/core/Button";
 
-const StyledSearch = styled("div")(({ theme }) => ({
-  position: "right",
-  borderRadius: theme.shape.borderRadius,
-  backgroundColor: alpha(theme.palette.primary.main, 0.15),
-  "&:hover": {
-    backgroundColor: alpha(theme.palette.primary.main, 0.25),
-  },
-  marginRight: theme.spacing(2, 3),
-  marginLeft: 0,
-  width: "100%",
-  [theme.breakpoints.up("sm")]: {
-    marginLeft: theme.spacing(3),
-    width: "auto",
-  },
-}));
-
-const SearchIconWrapper = styled("div")(({ theme }) => ({
-  padding: theme.spacing(0,0),
-  height: "100%",
-  position: "in front of",
-  pointerEvents: "none",
-  display: "absolute",
-  alignItems: "center",
-  justifyContent: "center",
-}));
-
-const StyledInputBase = styled(InputBase)(({ theme }) => ({
-  color: "inherit",
-  "& .MuiInputBase-input": {
-    padding: theme.spacing(1, 1, 1, 0),
-    // vertical padding + font size from searchIcon
-    paddingLeft: `calc(1em + ${theme.spacing(4)})`,
-    transition: theme.transitions.create("width"),
-    width: "100%",
-    [theme.breakpoints.up("md")]: {
-      width: "20ch",
-    },
-  },
-}));
-
-//search as JSX
-const search = (
-  <StyledSearch>
-    
-    <SearchIconWrapper>
-      {" "}
-      <SearchIcon />{" "}
-    </SearchIconWrapper>
-    
-    <StyledInputBase
-      placeholder="Type Search Here"
-      inputProps={{ "aria-label": "search" }}
-    />
-  </StyledSearch>
-);
 
 export default function MainNavigation() {
   //react useState hook to save the current open/close state of the drawer, normally variables disappear after the function was executed
@@ -102,11 +47,6 @@ export default function MainNavigation() {
     <AppBar position="static">
       <Container maxWidth="lg" disableGutters="true">
         <Toolbar>
-          {/* coded this out as we are using Teaching Artist Hub from elsewhere so the 
-          menu doesn't need to repeat it.   */}
-          {/* <Typography variant="h6" sx={{ flexGrow: 1, fontWeight: 700 }}>
-           Teaching Artist Hub
-          </Typography> */}
 
           <IconButton
             edge="start"
@@ -132,7 +72,7 @@ export default function MainNavigation() {
               },
             }}
           >
-            {search}
+           
           </Box>
 
           
@@ -200,7 +140,7 @@ export default function MainNavigation() {
                 </ListItem>
               </Box>
 
-              {search}
+           
 
               <Box
                 sx={{

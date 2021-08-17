@@ -212,10 +212,10 @@ export default function MainNavigation() {
                   transform: "translate(-50%, 0)",
                 }}
               >
-                <Button variant="contained" sx={{ m: 1, width: 0.5 }}>
+                <Button component={Link} href="/login" variant="contained" sx={{ m: 1, width: 0.5 }}>
                   Register
                 </Button>
-                <Button variant="outlined" sx={{ m: 1, width: 0.5 }}>
+                <Button component={Link} href="/signup" variant="outlined" sx={{ m: 1, width: 0.5 }}>
                   Login
                 </Button>
               </Box>

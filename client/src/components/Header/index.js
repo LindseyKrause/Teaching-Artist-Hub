@@ -15,23 +15,25 @@ const Header = () => {
         <Link to="/">
           <h1>Teaching Artist Hub</h1>
         </Link>
-        <BurgerMenu />
+        
         <nav className="text-center">
           {Auth.loggedIn() ? (
             <>
-              <Link to="/profile">View Profile</Link>
+              {/* <Link to="/profile">View Profile</Link>
               <a href="/" onClick={logout}>
                 Logout
               </a>
               <Link to="/calendar">Calendar</Link>
               <Link to="/home">Forum & Announcements</Link>
-              <Link to="/forms">Forms</Link>
-
+              <Link to="/forms">Forms</Link> */}
+              <BurgerMenu />
             </>
           ) : (
             <>
-              <Link to="/login">Login</Link>
-              <Link to="/signup">Signup</Link>
+            {/* commented out because these are on the 
+            burgerMenu  will ask team if this is where they want them. */}
+              {/* <Link to="/login">Login</Link>
+              <Link to="/signup">Signup</Link> */}
             </>
             
           )}

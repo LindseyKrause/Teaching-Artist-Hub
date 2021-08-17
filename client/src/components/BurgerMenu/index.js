@@ -135,23 +135,7 @@ export default function MainNavigation() {
 
            
 
-              <Box
-                sx={{
-                  display: "flex",
-                  justifyContent: "center",
-                  position: "absolute",
-                  bottom: "0",
-                  left: "50%",
-                  transform: "translate(-50%, 0)",
-                }}
-              >
-                <Button component={Link} href="/login" variant="contained" sx={{ m: 1, width: 0.5 }}>
-                  Register
-                </Button>
-                <Button component={Link} href="/signup" variant="outlined" sx={{ m: 1, width: 0.5 }}>
-                  Login
-                </Button>
-              </Box>
+             
             </Box>
           </Drawer>
         </Toolbar>

@@ -162,32 +162,32 @@ export default function MainNavigation() {
               <Box sx={{ mb: 2 }}>
                 <ListItem button>
                   <ListItemIcon>
-                    <ImageIcon sx={{ color: "primary.main" }} />
+                    <AccountCircle sx={{ color: "primary.main" }} />
                   </ListItemIcon>
                   <ListItemText primary="Profile" />
                 </ListItem>
 
                 <ListItem button>
                   <ListItemIcon>
-                    <DescriptionIcon sx={{ color: "primary.main" }} />
+                    <MeetingRoom sx={{ color: "primary.main" }} />
                   </ListItemIcon>
                   <ListItemText primary="Logout" />
                 </ListItem>
                 <ListItem button>
                   <ListItemIcon>
-                    <FolderIcon sx={{ color: "primary.main" }} />
+                    <CalendarToday sx={{ color: "primary.main" }} />
                   </ListItemIcon>
                   <ListItemText primary="Calendar" />
                 </ListItem>
                 <ListItem button>
                   <ListItemIcon>
-                    <FolderIcon sx={{ color: "primary.main" }} />
+                    <Forum sx={{ color: "primary.main" }} />
                   </ListItemIcon>
                   <ListItemText primary="Forums & Announcements" />
                 </ListItem>
                 <ListItem button>
                   <ListItemIcon>
-                    <FolderIcon sx={{ color: "primary.main" }} />
+                    <Web sx={{ color: "primary.main" }} />
                   </ListItemIcon>
                   <ListItemText primary="Forms" />
                 </ListItem>

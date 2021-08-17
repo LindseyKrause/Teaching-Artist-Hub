@@ -20,13 +20,11 @@ import ListItemText from "@material-ui/core/ListItemText";
 
 // icons used for nav drawer
 import AccountCircle from "@material-ui/icons/AccountCircle";
-import MeetingRoom from "@material-ui/icons/MeetingRoom";
 import CalendarToday from "@material-ui/icons/CalendarToday";
 import Web from "@material-ui/icons/Web";
 import Forum from "@material-ui/icons/Forum";
 import Home from "@material-ui/icons/Home";
-// importing Psychology icon isn't working so trying HomeIcon
-// import Psychology from "@material-ui/icons/Psychology";
+
 
 
 export default function MainNavigation() {

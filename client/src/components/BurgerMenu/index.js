@@ -20,6 +20,11 @@ import ImageIcon from "@material-ui/icons/Image";
 import DescriptionIcon from "@material-ui/icons/Description";
 import InputBase from "@material-ui/core/InputBase";
 import SearchIcon from "@material-ui/icons/Search";
+import AccountCircle from "@material-ui/icons/AccountCircle";
+import MeetingRoom from "@material-ui/icons/MeetingRoom";
+import CalendarToday from "@material-ui/icons/CalendarToday";
+import Web from "@material-ui/icons/Web";
+import Announcement from "@material-ui/icons/Announcement";
 import Button from "@material-ui/core/Button";
 
 const StyledSearch = styled("div")(({ theme }) => ({

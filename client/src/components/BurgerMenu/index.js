@@ -111,13 +111,6 @@ export default function MainNavigation() {
                   <ListItemText primary="Profile" />
                 </ListItem>
 
-                <ListItem button>
-                  <ListItemIcon>
-                    <MeetingRoom sx={{ color: "primary.main" }} />
-                  </ListItemIcon>
-                  <ListItemText primary="Logout" />
-                </ListItem>
-
                 <ListItem button component={Link} href="/calendar">
                   <ListItemIcon>
                     <CalendarToday sx={{ color: "primary.main" }} />

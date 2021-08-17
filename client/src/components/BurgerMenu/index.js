@@ -12,6 +12,7 @@ import Box from "@material-ui/core/Box";
 import Drawer from "@material-ui/core/Drawer";
 import CloseIcon from "@material-ui/icons/Close";
 import Divider from "@material-ui/core/Divider";
+import Link from '@material-ui/core/Link';
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
@@ -99,21 +100,11 @@ export default function MainNavigation() {
     <AppBar position="static">
       <Container maxWidth="lg" disableGutters="true">
         <Toolbar>
-          <Typography variant="h6" sx={{ flexGrow: 1, fontWeight: 700 }}>
-            Brand
-          </Typography>
-
-          <Box
-            component="div"
-            sx={{
-              display: {
-                xs: "none",
-                sm: "block",
-              },
-            }}
-          >
-            {search}
-          </Box>
+          {/* coded this out as we are using Teaching Artist Hub from elsewhere so the 
+          menu doesn't need to repeat it.   */}
+          {/* <Typography variant="h6" sx={{ flexGrow: 1, fontWeight: 700 }}>
+           Teaching Artist Hub
+          </Typography> */}
 
           <IconButton
             edge="start"
@@ -130,6 +121,19 @@ export default function MainNavigation() {
           >
             <MenuIcon />
           </IconButton>
+          <Box
+            component="div"
+            sx={{
+              display: {
+                xs: "none",
+                sm: "block",
+              },
+            }}
+          >
+            {search}
+          </Box>
+
+          
 
           {/* The outside of the drawer */}
           <Drawer
@@ -158,7 +162,7 @@ export default function MainNavigation() {
               <Divider sx={{ mb: 2 }} />
 
               <Box sx={{ mb: 2 }}>
-                <ListItem button>
+                <ListItem button component={Link} href="/profile">
                   <ListItemIcon>
                     <AccountCircle sx={{ color: "primary.main" }} />
                   </ListItemIcon>
@@ -171,12 +175,14 @@ export default function MainNavigation() {
                   </ListItemIcon>
                   <ListItemText primary="Logout" />
                 </ListItem>
+
                 <ListItem button>
                   <ListItemIcon>
                     <CalendarToday sx={{ color: "primary.main" }} />
                   </ListItemIcon>
                   <ListItemText primary="Calendar" />
                 </ListItem>
+                
                 <ListItem button>
                   <ListItemIcon>
                     <Forum sx={{ color: "primary.main" }} />

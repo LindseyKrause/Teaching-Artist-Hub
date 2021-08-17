@@ -111,18 +111,18 @@ export default function MainNavigation() {
                   <ListItemText primary="Profile" />
                 </ListItem>
 
-                <ListItem button component={Link} href="/calendar">
-                  <ListItemIcon>
-                    <CalendarToday sx={{ color: "primary.main" }} />
-                  </ListItemIcon>
-                  <ListItemText primary="Calendar" />
-                </ListItem>
-                
                 <ListItem button component={Link} href="/home">
                   <ListItemIcon>
                     <Forum sx={{ color: "primary.main" }} />
                   </ListItemIcon>
                   <ListItemText primary="Forums & Announcements" />
+                </ListItem>
+
+                <ListItem button component={Link} href="/calendar">
+                  <ListItemIcon>
+                    <CalendarToday sx={{ color: "primary.main" }} />
+                  </ListItemIcon>
+                  <ListItemText primary="Calendar" />
                 </ListItem>
 
                 <ListItem button component={Link} href="/forms">

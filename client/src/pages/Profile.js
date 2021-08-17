@@ -4,13 +4,13 @@ import { Redirect, useParams } from 'react-router-dom';
 import ThoughtForm from '../components/ThoughtForm';
 import ThoughtList from '../components/ThoughtList';
 import FriendList from '../components/FriendList';
+import UploadPhotos from '../components/UploadPhotos';
 
 import { useQuery, useMutation } from '@apollo/react-hooks';
 import { QUERY_USER, QUERY_ME } from '../utils/queries';
 import { ADD_FRIEND } from '../utils/mutations';
 import { REMOVE_FRIEND } from '../utils/mutations';
 import Auth from '../utils/auth';   
-// import { removeFriendId } from '../utils/localStorage';
 
 const Profile = props => {
   const { username: userParam } = useParams();
@@ -38,7 +38,7 @@ const Profile = props => {
   if (!user?.username) {
     return (
       <h4>
-        You need to be logged in to see this. Use the navigation links above to sign up or log in!
+        You need to be logged in to see this. Please sign up or log in!
       </h4>
     );
   }
@@ -71,7 +71,7 @@ const Profile = props => {
         <h2 className="bg-dark text-secondary p-3 display-inline-block">
           Viewing {userParam ? `${user.username}'s` : 'your'} profile.
         </h2>
-
+        
         {userParam && (
           <button className="btn ml-auto" onClick={savedFriends}>
             Add Friend
@@ -87,7 +87,12 @@ const Profile = props => {
         }
       </div>
 
-      <div className="flex-row justify-space-between mb-3">
+      <div className="picture">
+    <UploadPhotos picture={user.picture} title={`${user.picture}'s photo...`} />
+  </div>
+  <br></br>
+  
+  <div className="flex-row justify-space-between mb-3">
         <div className="col-12 mb-3 col-lg-8">
           <ThoughtList thoughts={user.thoughts} title={`${user.username}'s thoughts...`} />
         </div>
@@ -102,7 +107,9 @@ const Profile = props => {
       </div>
       <div className="mb-3">{!userParam && <ThoughtForm />}</div>
     </div>
+  
+
   );
-};
+      };
 
 export default Profile;

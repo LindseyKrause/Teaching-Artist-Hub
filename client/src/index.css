@@ -77,7 +77,7 @@ body {
 body {
 	margin: 0;
 	padding: 0;
-	font-family: "Inconsolata", monospace;
+	font-family: 'Lato', sans-serif;
 	font-weight: 400;
 	line-height: 1.5;
 	font-size: 20px;
@@ -91,7 +91,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: "Karla", sans-serif;
+	font-family: 'Lato', sans-serif;
 	font-weight: 700;
 	margin: 5px 0;
 	line-height: 1.25;

@@ -22,14 +22,14 @@
     <br/>
         <br/>
             <br/>
-      <img src = "https://i.imgur.com/9tGztI3.png" width="45" height="45" style="float:left; padding-right:10px"  /> 
-      <img src = "https://i.imgur.com/bETcokI.png" width="45" height="45" style="float:left; padding-right:01px" />
-      <img src = "https://i.imgur.com/BWlZ9rc.jpg" width="65" height="55" style="float:left; padding-right:02px" />
+      <img src = "https://i.imgur.com/9tGztI3.png" width="45" height="45" style="float:left; padding-right:07px"  /> 
+      <img src = "https://i.imgur.com/bETcokI.png" width="45" height="45" style="float:left; padding-right:07px" />
+      <img src = "https://i.imgur.com/BWlZ9rc.jpg" width="60" height="45" style="float:left; padding-right:07px" />
       <img src = "https://i.imgur.com/66s2ERk.png" width="40" height="45" style="float:left; padding-right:15px" />
       <img src = "https://i.imgur.com/9oMswTL.png" width="45" height="45" style="float:left; padding-right:35px" />
       <img src = "https://i.imgur.com/EY9Fj93.png" width="45" height="45" style="float:left; padding-right:20px" />
-      <img src = "https://i.imgur.com/PXjpcCH.png" width="45" height="45" style="float:left; padding-right:32px" />
-      <img src = "https://i.imgur.com/HHTAmQd.jpg" width="45" height="45" style="float:left; padding-right:40px" />
+      <img src = "https://i.imgur.com/PXjpcCH.png" width="45" height="45" style="float:left; padding-right:30px" />
+      <img src = "https://i.imgur.com/HHTAmQd.jpg" width="45" height="45" style="float:left; padding-right:30px" />
       <img src = "https://i.imgur.com/69olifp.png" width="85" height="45" style="float:left; padding-right:15px" />
       <img src = "https://i.imgur.com/ElhJxpj.png" width="45" height="45" />
 

@@ -1,5 +1,7 @@
 import React from 'react';
 import GoogleCalendar from "../components/Calendar";
+import { ApolloProvider } from "@apollo/react-hooks";
+
 
 function Calendar() {
 

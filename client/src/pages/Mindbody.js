@@ -1,9 +1,6 @@
 /** @format */
 
 import React from "react";
-import Auth from "../utils/auth";
-import { useQuery } from "@apollo/react-hooks";
-import { QUERY_ME_BASIC } from "../utils/queries";
 
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";

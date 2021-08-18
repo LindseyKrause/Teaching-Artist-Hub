@@ -5,7 +5,6 @@ import EventNoteIcon from "@material-ui/icons/EventNote";
 import OpenInBrowserIcon from "@material-ui/icons/OpenInBrowser";
 import EmailIcon from "@material-ui/icons/Email";
 import ChromeReaderModeIcon from "@material-ui/icons/ChromeReaderMode";
-import { makeStyles } from "@material-ui/core/styles";
 
 const Forms = () => {
 	return (

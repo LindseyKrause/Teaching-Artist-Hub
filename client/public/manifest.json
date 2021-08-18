@@ -1,9 +1,9 @@
 {
-    "short_name": "Artist Hub",
+    "short_name": "TAH",
     "name": "Teaching Artist Hub",
     "icons": [
         {
-            "src": "/images/logo.png",
+            "src": "/images/main-logo.png",
             "type": "image/png",
             "sizes": "1024x1024",
             "purpose": "any maskable"
@@ -11,6 +11,6 @@
     ],
     "start_url": "/build",
     "display": "standalone",
-    "theme_color": "#000000",
+    "theme_color": "#61dafb",
     "background_color": "#ffffff"
 }

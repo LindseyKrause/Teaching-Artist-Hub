@@ -16,16 +16,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@apollo/react-hooks": "^4.0.0",
-    "@emotion/react": "^11.4.1",
-    "@ericz1803/react-google-calendar": "^4.2.1",
-    "@fontsource/roboto": "^4.5.0",
-    "@material-ui/core": "^4.12.3",
-    "@material-ui/icons": "^4.11.2",
-    "if-env": "^1.0.4",
-    "jquery": "^3.6.0",
-    "react": "^17.0.2",
-    "react-dom": "^16.14.0"
+    "if-env": "^1.0.4"
   },
   "devDependencies": {
     "concurrently": "^5.1.0",

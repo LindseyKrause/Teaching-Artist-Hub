@@ -70,12 +70,14 @@ https://teaching-artist-hub.herokuapp.com/
 
 
 ## Screenshots
-![](./public/images/screenshots/booksearch.png) - Replace
-![](./public/images/screenshots/viewsavedbooks.png) - Replace
+![](./client/public/images/screenshots/login-light.png)
+![](./client/public/images/screenshots/login-dark.png)
 
 
 ## Testing
 ✏️ See deployed site to test functionality. 
+
+![](./client/public/images/screenshots/PWAtest.png)
 
 <br>
 
@@ -87,6 +89,6 @@ This application was created by Lindsey Krause, Christi Mc, Joseph Porzaazo, Van
 ## Questions
 :telephone_receiver: Contact us with any questions: [email] 
 <br>
-(mailto: kelliewerrell@gmail.com, vmcguire6377@gmail.com, joeporazzo@gmail.com, Christi@christi.com) 
+(mailto: kelliewerrell@gmail.com, vmcguire6377@gmail.com, joeporazzo@gmail.com,  christileemc@gmail.com) 
 <br>
  [GitHub Kellie Werrell](https://github.com/Kwerrell73), [GitHub Vanessa McGuire](https://github.com/vmcguire6377), [GitHub Christi Mc](https://github.com/Kwerrell73), [GitHub Joe P](https://github.com/noreaster24), [GitHub Lindsey Krause](https://github.com/LindseyKrause)<br />

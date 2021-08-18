@@ -2,25 +2,8 @@ import React from "react";
 
 const FacebookInfo = () => {
     return (
-    <div
-        className="fb-page"
-        data-href="https://www.facebook.com/PhoenixCenterForTheArts/"
-        data-tabs="timeline"
-        data-width="500px"
-        data-height="600px"
-        data-small-header="false"
-        data-adapt-container-width="true"
-        data-hide-cover="true"
-        data-show-facepile="true"
-    >
-        <blockquote
-            cite="https://www.facebook.com/PhoenixCenterForTheArts/"
-            className="fb-xfbml-parse-ignore"
-        >
-            <a href="https://www.facebook.com/PhoenixCenterForTheArts/" data-lazy="true">
-                Phoenix Center For The Arts
-            </a>
-        </blockquote>
+    <div>
+        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FPhoenixCenterForTheArts&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=true&appId=743876443000844" width="340" height="500" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" data-lazy="true"></iframe>
         </div>
     )
 }

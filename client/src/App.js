@@ -39,6 +39,7 @@ const client = new ApolloClient({
 function App() {
 	const [theme, themeToggler, mountedComponent] = useDarkMode();
 	const themeMode = theme === "light" ? lightTheme : darkTheme;
+
 	if (!mountedComponent) return <div />
 	return (
 		<ApolloProvider client={client}>

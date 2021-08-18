@@ -18,12 +18,6 @@ const Forms = () => {
 	const classes = useStyles();
 	return (
 		<div id="container">
-			<Paper className={classes.paper}>
-				<iframe
-					src="https://open.spotify.com/embed/playlist/0bzoCZebq8KKqYRtCs0abQ"
-					allow="encrypted-media"
-				></iframe>
-			</Paper>
 			<form id="container" className="form-btn">
 				<br></br>
 				<h3>Please click below to access forms.</h3>

@@ -8,7 +8,7 @@ import { QUERY_ME_BASIC } from "../utils/queries";
 import { makeStyles, createTheme } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
-
+import SocialDrawer from "../components/SocialDrawer"
 const useStyles = makeStyles((theme) => ({
 	Paper: {
 		padding: theme.spacing(8),
@@ -36,9 +36,7 @@ const Mindbody = () => {
 	return (
 		<main>
 			<div className={classes.root}>
-				<Grid container>
-					<Grid item lg>
-						<Grid item lg>
+				
 						<Paper className={classes.paper}>
 							Class Schedule
 							<healcode-widget
@@ -48,53 +46,6 @@ const Mindbody = () => {
 								data-widget-version="1"
 							></healcode-widget>
 							</Paper>
-						</Grid>
-					</Grid>
-					<Grid item xs>
-						<Grid item xs>
-						<Paper className={classes.paper}>
-							Facebook
-							<div
-								className="fb-page"
-								data-href="https://www.facebook.com/PhoenixCenterForTheArts/"
-								data-tabs="timeline"
-								data-width="500px"
-								data-height="600px"
-								data-small-header="false"
-								data-adapt-container-width="true"
-								data-hide-cover="true"
-								data-show-facepile="true"
-							>
-								<blockquote
-									cite="https://www.facebook.com/PhoenixCenterForTheArts/"
-									className="fb-xfbml-parse-ignore"
-								>
-									<a href="https://www.facebook.com/PhoenixCenterForTheArts/" data-lazy="true">
-										Phoenix Center For The Arts
-									</a>
-								</blockquote>
-							</div>
-							</Paper>
-						</Grid>
-					</Grid>
-					<Grid item xs>
-						<Paper className={classes.paper}>
-							Twitter
-							<a
-								className="twitter-timeline"
-								data-width="500"
-								data-height="600"
-								data-theme="dark"
-								href="https://twitter.com/PhxCenterArts?ref_src=twsrc%5Etfw" data-tweet-limit="3"
-							>
-								Tweets by PhxCenterArts
-							</a>
-						</Paper>
-					</Grid>
-					<Grid item xs>
-						
-					</Grid>
-				</Grid>
 			</div>
 		</main>
 	);

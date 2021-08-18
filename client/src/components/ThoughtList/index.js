@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const ThoughtList = ({ thoughts, title }) => {
   if (!thoughts.length) {
-    return <h3>No Thoughts Yet</h3>;
+    return <h3>No Posts Yet</h3>;
   }
 
   return (
@@ -20,10 +20,10 @@ const ThoughtList = ({ thoughts, title }) => {
               >
                 {thought.username}
               </Link>{' '}
-              thought on {thought.createdAt}
+              post on {thought.createdAt}
             </p>
             <div className="card-body">
-              <Link to={`/thought/${thought._id}`}>
+              <Link to={`/post/${thought._id}`}>
                 <p>{thought.thoughtText}</p>
                 <p className="mb-0">
                   Reactions: {thought.reactionCount} || Click to{' '}

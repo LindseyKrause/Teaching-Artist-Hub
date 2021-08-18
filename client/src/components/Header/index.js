@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import Auth from '../../utils/auth';
+import BurgerMenu from '../BurgerMenu/index';
 
 const Header = () => {
   const logout = event => {
@@ -13,26 +14,26 @@ const Header = () => {
       <div className="container flex-row justify-space-between-lg justify-center align-center white content.navbar transparent.navbar brand">
         <Link to="/">
           <h1>Teaching Artist Hub</h1>
+          
+              
         </Link>
-
+        
+        
         <nav className="text-center">
           {Auth.loggedIn() ? (
             <>
-              <Link to="/profile">View Profile</Link>
+              <BurgerMenu />
               <a href="/" onClick={logout}>
                 Logout
               </a>
-              <Link to="/calendar">Calendar</Link>
-              <Link to="/home">Forum & Announcements</Link>
-              <Link to="/forms">Forms</Link>
-
             </>
-          ) : (
-            <>
-              <Link to="/login">Login</Link>
+          ) : (<>
+            <Link to="/login">Login</Link>
+          <br></br>
               <Link to="/signup">Signup</Link>
+           
             </>
-            
+
           )}
         </nav>
       </div>

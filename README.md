@@ -80,7 +80,7 @@ https://teaching-artist-hub.herokuapp.com/
 <br>
 
 ## Contribution
-This application was created by Lindsey Krause, Christi-Lee Currier, Joseph Porzaazo, Vanessa McGuire, and Kellie Werrell
+This application was created by Lindsey Krause, Christi-Lee Currier, Joe Porrazzo, Vanessa McGuire, and Kellie Werrell
 
 <br>
 

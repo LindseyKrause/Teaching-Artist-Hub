@@ -38,19 +38,6 @@
 		"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 	--font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
 		"Liberation Mono", "Courier New", monospace;
-	/* --primary: #497573;
-	--secondary: #99f7f2;
-	--tertiary: #b2c2c1;
-	--quatrinary: #cadbda;
-	--light: #e1f5f4;
-	--dark: #6c7575;
-	--error: rgb(228, 46, 1);
-	--border-radius: 0.3rem;
-	--spacing-one: calc(1rem * 0.25);
-	--spacing-two: calc(1rem * 0.5);
-	--spacing-three: 1rem;
-	--spacing-four: calc(1rem * 1.5);
-	--spacing-five: calc(1rem * 3); */
 }
 
 * {
@@ -60,18 +47,6 @@
 html,
 body {
 	min-height: 100%;
-}
-
-#headerbg {
-	background: linear-gradient(
-		100deg,
-		rgb(191, 224, 245),
-		rgb(229, 229, 231),
-		rgb(223, 236, 148),
-		rgb(191, 224, 245),
-		rgb(223, 236, 148),
-		rgb(158, 206, 238)
-	);
 }
 
 body {

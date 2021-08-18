@@ -5,17 +5,9 @@ import EventNoteIcon from "@material-ui/icons/EventNote";
 import OpenInBrowserIcon from "@material-ui/icons/OpenInBrowser";
 import EmailIcon from "@material-ui/icons/Email";
 import ChromeReaderModeIcon from "@material-ui/icons/ChromeReaderMode";
-import Paper from "@material-ui/core/Paper";
-import { makeStyles, createTheme } from "@material-ui/core/styles";
-
-const useStyles = makeStyles((theme) => ({
-	Paper: {
-		padding: theme.spacing(8),
-	},
-}));
+import { makeStyles } from "@material-ui/core/styles";
 
 const Forms = () => {
-	const classes = useStyles();
 	return (
 		<div id="container">
 			<form id="container" className="form-btn">

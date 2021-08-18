@@ -69,7 +69,7 @@ export default function MainNavigation() {
             }}
           >
             <MenuIcon />
-          </IconButton>
+            </IconButton>
             <IconButton>
             <Button variant="outlined" color="primary" style={{ color: "#e14eca" }}>
             <SocialDrawer style={{ color: "#e14eca" }}></SocialDrawer>
@@ -153,6 +153,6 @@ export default function MainNavigation() {
           </Drawer>
         </Toolbar>
       </Container>
-    </AppBar>
+      </AppBar>
   );
 }

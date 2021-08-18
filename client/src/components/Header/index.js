@@ -5,7 +5,8 @@ import BurgerMenu from '../BurgerMenu/index';
 
 const Header = () => {
   return (
-    <header style={{backgroundImage: "url('https://i.imgur.com/ehPQscd.png')"}}>
+    <header>
+      
       <div className="container flex-row justify-space-between-lg justify-center align-center white content.navbar transparent.navbar brand">
         <nav className="text-center">
           {Auth.loggedIn() ? (
@@ -20,7 +21,7 @@ const Header = () => {
           )}
         </nav>
         </div>
-    </header>
+      </header>
   );
 };
 

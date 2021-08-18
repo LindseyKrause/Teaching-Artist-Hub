@@ -31,9 +31,9 @@ export default function SocialDrawer() {
             {['right'].map((anchor) => (
                 <React.Fragment key={anchor}>
                     <Button onClick={toggleDrawer(anchor, true)}>{anchor}
-                        <TwitterIcon></TwitterIcon>
-                        <FacebookIcon></FacebookIcon>
                         <MusicNoteIcon></MusicNoteIcon>
+                        <FacebookIcon></FacebookIcon>
+                        <TwitterIcon></TwitterIcon>
                     </Button>
                     <Drawer anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)}>
                         {list(anchor)}

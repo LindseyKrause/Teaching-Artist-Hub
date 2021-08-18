@@ -34,6 +34,14 @@ export default function SimpleCard() {
 		<div>
 			<Card className={classes.root}>
 				<CardContent>
+					<SpotifyInfo></SpotifyInfo>
+				</CardContent>
+				{/* <CardActions>
+                <Button size="small">Learn More</Button>
+            </CardActions> */}
+			</Card>
+			<Card className={classes.root}>
+				<CardContent>
 					<FacebookInfo></FacebookInfo>
 				</CardContent>
 				{/* <CardActions>
@@ -43,14 +51,6 @@ export default function SimpleCard() {
 			<Card className={classes.root}>
 				<CardContent>
 					<TwitterInfo></TwitterInfo>
-				</CardContent>
-				{/* <CardActions>
-                <Button size="small">Learn More</Button>
-            </CardActions> */}
-			</Card>
-			<Card className={classes.root}>
-				<CardContent>
-					<SpotifyInfo></SpotifyInfo>
 				</CardContent>
 				{/* <CardActions>
                 <Button size="small">Learn More</Button>

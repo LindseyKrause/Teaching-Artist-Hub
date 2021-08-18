@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { styled, alpha } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 
@@ -17,16 +16,17 @@ import Link from '@material-ui/core/Link';
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
-
 // icons used for nav drawer
 import AccountCircle from "@material-ui/icons/AccountCircle";
-import MeetingRoom from "@material-ui/icons/MeetingRoom";
 import CalendarToday from "@material-ui/icons/CalendarToday";
 import Web from "@material-ui/icons/Web";
 import Forum from "@material-ui/icons/Forum";
 import Home from "@material-ui/icons/Home";
 // importing Psychology icon isn't working so trying HomeIcon
 // import Psychology from "@material-ui/icons/Psychology";
+import SocialDrawer from "../SocialDrawer";
+import Auth from '../../utils/auth';
+import { Button } from "@material-ui/core";
 
 
 export default function MainNavigation() {
@@ -44,15 +44,20 @@ export default function MainNavigation() {
     //changes the function state according to the value of open
     setState(open);
   };
-
+  const styleAppBar = {
+    backgroundColor: "transparent",
+  }
+  const logout = event => {
+    event.preventDefault();
+    Auth.logout();
+  };
   return (
-    <AppBar position="static">
+    <AppBar position="static" style={styleAppBar}>
       <Container maxWidth="lg" disableGutters="true">
         <Toolbar>
-
           <IconButton
             edge="start"
-            color="inherit"
+            color="primary"
             aria-label="open drawer"
             onClick={toggleDrawer(true)}
             sx={{
@@ -64,7 +69,20 @@ export default function MainNavigation() {
             }}
           >
             <MenuIcon />
+            </IconButton>
+            <IconButton>
+            <Button variant="outlined" color="primary" style={{ color: "#e14eca" }}>
+            <SocialDrawer style={{ color: "#e14eca" }}></SocialDrawer>
+            </Button>
           </IconButton>
+          {/* <Link to="/">
+            <h1>Teaching Artist Hub</h1>
+          </Link> */}
+          <Button variant="outlined" color="primary" style={{ color: "#e14eca" }}>
+            <a href="/" onClick={logout}>
+            Logout
+            </a>
+          </Button>
           <Box
             component="div"
             sx={{
@@ -74,11 +92,7 @@ export default function MainNavigation() {
               },
             }}
           >
-           
           </Box>
-
-          
-
           {/* The outside of the drawer */}
           <Drawer
             //from which side the drawer slides in
@@ -102,39 +116,32 @@ export default function MainNavigation() {
               <IconButton sx={{ mb: 2 }}>
                 <CloseIcon onClick={toggleDrawer(false)} />
               </IconButton>
-
               <Divider sx={{ mb: 2 }} />
-
               <Box sx={{ mb: 2 }}>
-
                 <ListItem button component={Link} href="/profile">
                   <ListItemIcon>
                     <AccountCircle sx={{ color: "primary.main" }} />
                   </ListItemIcon>
                   <ListItemText primary="Profile" />
                 </ListItem>
-
                 <ListItem button component={Link} href="/home">
                   <ListItemIcon>
                     <Forum sx={{ color: "primary.main" }} />
                   </ListItemIcon>
                   <ListItemText primary="Forums & Announcements" />
                 </ListItem>
-
                 <ListItem button component={Link} href="/">
                   <ListItemIcon>
                     <Home sx={{ color: "primary.main" }} />
                   </ListItemIcon>
                   <ListItemText primary="Mindbody" />
                 </ListItem>
-
                 <ListItem button component={Link} href="/calendar">
                   <ListItemIcon>
                     <CalendarToday sx={{ color: "primary.main" }} />
                   </ListItemIcon>
                   <ListItemText primary="Calendar" />
                 </ListItem>
-
                 <ListItem button component={Link} href="/forms">
                   <ListItemIcon>
                     <Web sx={{ color: "primary.main" }} />
@@ -142,14 +149,10 @@ export default function MainNavigation() {
                   <ListItemText primary="Forms" />
                 </ListItem>
               </Box>
-
-           
-
-             
             </Box>
           </Drawer>
         </Toolbar>
       </Container>
-    </AppBar>
+      </AppBar>
   );
 }

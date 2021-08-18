@@ -2,18 +2,19 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { ApolloProvider } from "@apollo/react-hooks";
 import ApolloClient from "apollo-boost";
-import React, { useState, useEffect } from "react";
+import React from "react";
+import { Container } from "@material-ui/core";
 import { ThemeProvider } from "styled-components";
 import { useDarkMode } from "./components/useDarkMode";
 import { GlobalStyles } from "./components/globalStyles";
 import { lightTheme, darkTheme } from "./components/Themes";
-import Toggle from "./components/Toggler"
+import Toggle from "./components/Toggler";
 
-import Header from './components/Header';
-import Footer from './components/Footer';
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 // import MenuBar from './components/MenuBar/MenuBar'
 
-import Forms from "./pages/Forms"
+import Forms from "./pages/Forms";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import NoMatch from "./pages/NoMatch";
@@ -39,20 +40,30 @@ const client = new ApolloClient({
 function App() {
 	const [theme, themeToggler, mountedComponent] = useDarkMode();
 	const themeMode = theme === "light" ? lightTheme : darkTheme;
-	if (!mountedComponent) return <div />
+
+	if (!mountedComponent) return <div />;
 	return (
 		<ApolloProvider client={client}>
 			<ThemeProvider theme={themeMode}>
 				<>
 					<GlobalStyles />
 					<Router>
-
 						<div className="flex-column justify-flex-start min-100-vh">
 							<Header />
-
+							
 							<div className="container">
 								<div>
 									<Toggle theme={theme} toggleTheme={themeToggler} />
+									<img
+										src="https://i.imgur.com/ehPQscd.png"
+										alt="TAH Header"
+										style={{
+											minwidth: "50px",
+											minheight: "33px",
+											maxWidth: "250px",
+											maxHeight: "100px",
+										}}
+									></img>
 								</div>
 								<Switch>
 									<Route exact path="/" component={Mindbody} />

@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { ApolloProvider } from "@apollo/react-hooks";
 import ApolloClient from "apollo-boost";
 import React from "react";
-import { Container } from "@material-ui/core";
 import { ThemeProvider } from "styled-components";
 import { useDarkMode } from "./components/useDarkMode";
 import { GlobalStyles } from "./components/globalStyles";

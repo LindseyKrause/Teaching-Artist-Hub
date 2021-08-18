@@ -960,6 +960,13 @@ nav a:hover {
 	flex: 0 0 100%;
 }
 
+@media screen and (max-width: 640px) {
+	.form-btn {
+		flex: 0 0 100%;
+		width: 100%;
+	}
+}
+
 /* col-sm */
 @media screen and (min-width: 640px) {
 	.col-sm-auto {
@@ -1046,8 +1053,16 @@ nav a:hover {
 	.align-center-sm {
 		align-items: center;
 	}
+
 }
 
+
+@media screen and (max-width: 768px) {
+	.form-btn {
+		flex: 0 0 100%;
+		width: 100%;
+	}
+}
 /* col-md */
 @media screen and (min-width: 768px) {
 	.col-md-auto {
@@ -1134,6 +1149,7 @@ nav a:hover {
 	.align-center-md {
 		align-items: center;
 	}
+
 }
 
 /* col-lg */
@@ -1231,6 +1247,7 @@ nav a:hover {
 	.align-center-lg {
 		align-items: center;
 	}
+
 }
 
 /* col-xl */
@@ -1314,4 +1331,5 @@ nav a:hover {
 	.align-center-xl {
 		align-items: center;
 	}
+
 }

@@ -16,7 +16,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "if-env": "^1.0.4"
+    "if-env": "^1.0.4",
+    "jquery": "^3.6.0"
   },
   "devDependencies": {
     "concurrently": "^5.1.0",

@@ -57,7 +57,7 @@ export default function MainNavigation() {
         <Toolbar>
           <IconButton
             edge="start"
-            color="primary.main"
+            color="primary"
             aria-label="open drawer"
             onClick={toggleDrawer(true)}
             sx={{
@@ -70,14 +70,16 @@ export default function MainNavigation() {
           >
             <MenuIcon />
           </IconButton>
-          <Button variant="outlined" style={{ color: "#e14eca" }}>
+            <IconButton>
+            <Button variant="outlined" color="primary" style={{ color: "#e14eca" }}>
             <SocialDrawer style={{ color: "#e14eca" }}></SocialDrawer>
-          </Button>
+            </Button>
+          </IconButton>
           {/* <Link to="/">
             <h1>Teaching Artist Hub</h1>
           </Link> */}
-          <Button variant="outlined" style={{ color: "#e14eca" }}>
-            <a href="/" onClick={logout} style={{ color: "#e14eca"}}>
+          <Button variant="outlined" color="primary" style={{ color: "#e14eca" }}>
+            <a href="/" onClick={logout}>
             Logout
             </a>
           </Button>

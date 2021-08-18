@@ -6,6 +6,7 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import MusicNoteIcon from '@material-ui/icons/MusicNote';
 import SimpleCard from '../SocialCards';
+import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
 
 export default function SocialDrawer() {
     const [state, setState] = React.useState({
@@ -35,6 +36,14 @@ export default function SocialDrawer() {
                         <FacebookIcon></FacebookIcon>
                         <TwitterIcon></TwitterIcon>
                     </Button>
+                    <SwipeableDrawer
+                        anchor={anchor}
+                        open={state[anchor]}
+                        onClose={toggleDrawer(anchor, false)}
+                        onOpen={toggleDrawer(anchor, true)}
+                    >
+                        {list(anchor)}
+                    </SwipeableDrawer>
                     <Drawer anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)}>
                         {list(anchor)}
                     </Drawer>

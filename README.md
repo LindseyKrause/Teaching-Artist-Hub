@@ -2,7 +2,7 @@
 
 
 ## Description
-🔍Communications platform for aspiring artists and professors.
+🔍Communications platform for non-profit arts organization.
 <br>   
 
 ## Built With
@@ -70,9 +70,14 @@ https://teaching-artist-hub.herokuapp.com/
 
 
 ## Screenshots
-![](./client/public/images/screenshots/login-light.png)
-![](./client/public/images/screenshots/login-dark.png)
-
+![](./client/public/images/screenshots/profile.png)
+![](./client/public/images/screenshots/classSched.png)
+![](./client/public/images/screenshots/sidenav.png)
+![](./client/public/images/screenshots/posts.png)
+![](./client/public/images/screenshots/calendar.png)
+![](./client/public/images/screenshots/forms.png)
+![](./client/public/images/screenshots/socialmediadrawer.png)
+![](./client/public/images/screenshots/mobileviews.png)
 
 ## Testing
 ✏️ See deployed site to test functionality. 

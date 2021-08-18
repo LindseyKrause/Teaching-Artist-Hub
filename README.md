@@ -70,12 +70,14 @@ https://teaching-artist-hub.herokuapp.com/
 
 
 ## Screenshots
-![](./public/images/screenshots/booksearch.png) - Replace
-![](./public/images/screenshots/viewsavedbooks.png) - Replace
+![](./client/public/images/screenshots/login-light.png)
+![](./client/public/images/screenshots/login-dark.png)
 
 
 ## Testing
 ✏️ See deployed site to test functionality. 
+
+![](./client/public/images/screenshots/PWAtest.png)
 
 <br>
 

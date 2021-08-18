@@ -12,6 +12,7 @@ import { ADD_FRIEND } from '../utils/mutations';
 import { REMOVE_FRIEND } from '../utils/mutations';
 import Auth from '../utils/auth';   
 
+
 const Profile = props => {
   const { username: userParam } = useParams();
 
@@ -47,10 +48,13 @@ const Profile = props => {
     try {
       await addFriend({
         variables: { id: user._id }
+        
       });
     } catch (e) {
       console.error(e);
     }
+
+    
   }
 
   const handleFriendRemove = async () => {
@@ -66,7 +70,6 @@ const Profile = props => {
   };
 
 
-
   return (
     <div>
       <div className="flex-row mb-3">
@@ -75,7 +78,7 @@ const Profile = props => {
         </h2>
         
         {userParam && (
-          <button className="btn ml-auto" onClick={savedFriends}>
+          <button className="btn ml-auto" onClick={savedFriends} >
             Add Friend
           </button>
         )}

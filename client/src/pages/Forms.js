@@ -6,7 +6,7 @@ import ChromeReaderModeIcon from '@material-ui/icons/ChromeReaderMode';
 
 
 const Forms = () => (
-    <form id="container" className="form-btn">
+    <form id="btn-links" className="form-btn">
         <br></br>
         <h3>Please click below to access forms.</h3>
         <br></br>

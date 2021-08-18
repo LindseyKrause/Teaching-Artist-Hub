@@ -22,8 +22,8 @@ import CalendarToday from "@material-ui/icons/CalendarToday";
 import Web from "@material-ui/icons/Web";
 import Forum from "@material-ui/icons/Forum";
 import Home from "@material-ui/icons/Home";
-// importing Psychology icon isn't working so trying HomeIcon
-// import Psychology from "@material-ui/icons/Psychology";
+
+// social drawer elements
 import SocialDrawer from "../SocialDrawer";
 import Auth from '../../utils/auth';
 import { Button } from "@material-ui/core";
@@ -53,7 +53,7 @@ export default function MainNavigation() {
   };
   return (
     <AppBar position="static" style={styleAppBar}>
-      <Container maxWidth="lg" disableGutters="true">
+      <Container maxWidth="lg" >
         <Toolbar>
           <IconButton
             edge="start"

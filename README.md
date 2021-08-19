@@ -71,14 +71,15 @@ https://teaching-artist-hub.herokuapp.com/
 
 
 ## Screenshots
-![](./client/public/images/screenshots/profile.png)
-![](./client/public/images/screenshots/classSched.png)
-![](./client/public/images/screenshots/sidenav.png)
-![](./client/public/images/screenshots/posts.png)
-![](./client/public/images/screenshots/calendar.png)
-![](./client/public/images/screenshots/forms.png)
-![](./client/public/images/screenshots/socialmediadrawer.png)
-![](./client/public/images/screenshots/mobileviews.png)
+<img src = "./client/public/images/screenshots/profile.png" width="400" height="200" style="padding-right:10px"  /> <br>
+<img src = "./client/public/images/screenshots/classSched.png" width="400" height="200" style="padding-right:10px"  /> <br>
+<img src = "./client/public/images/screenshots/sidenav.png" width="400" height="200" style="padding-right:10px"  /> <br>
+<img src = "./client/public/images/screenshots/posts.png" width="400" height="200" style="padding-right:10px"  /> <br>
+<img src = "./client/public/images/screenshots/calendar.png" width="400" height="200" style="padding-right:10px"  /> <br>
+<img src = "./client/public/images/screenshots/forms.png" width="400" height="200" style="padding-right:10px"  /> <br>
+<img src = "./client/public/images/screenshots/socialmediadrawer.png" width="400" height="200" style="padding-right:10px"  /> <br>
+<img src = "./client/public/images/screenshots/mobileviews.png" width="400" height="200" style="padding-right:10px"  /> <br>
+
 
 ## Progressive Web App
 The Teaching Artist Hub has been designed as a progressive web app (PWA) and can be installed on most devices.  To install the TAH, complete the following steps:
@@ -101,11 +102,14 @@ The Teaching Artist Hub has been designed as a progressive web app (PWA) and can
 * Select the install button in the address bar
 * Select 'Install'
 
-![Installing the PWA](./client/public/images/screenshots/Install-PWA.gif) / ! [](Install-PWA.gif)
+<img src = "./client/public/images/screenshots/Install-PWA.gif" width="275" height="600" style="padding-right:60px" /> 
+
+<br>
+
 ## Testing
 ✏️ See deployed site to test functionality. 
 
-![](./client/public/images/screenshots/PWAtest.png)
+<img src = "./client/public/images/screenshots/PWAtest.png" width="600" height="450" style="padding-right:60px"  /> <br>
 
 <br>
 

@@ -56,6 +56,7 @@ As manager of an art studio, I need a professional and secure website that contr
 - [Table of Contents](#table-of-contents)
 - [Deployment](#deployment)
 - [Screenshots](#screenshots)
+- [Installing PWA](#progressive-web-app)
 - [Testing](#testing)
 - [Contribution](#contribution)
 - [Questions](#questions)
@@ -79,6 +80,28 @@ https://teaching-artist-hub.herokuapp.com/
 ![](./client/public/images/screenshots/socialmediadrawer.png)
 ![](./client/public/images/screenshots/mobileviews.png)
 
+## Progressive Web App
+The Teaching Artist Hub has been designed as a progressive web app (PWA) and can be installed on most devices.  To install the TAH, complete the following steps:
+
+### On iOS
+* Visit the following link in the Safari app: https://teaching-artist-hub.herokuapp.com/
+* Select the share icon on the toolbar
+* Scroll down and select 'Add to Home Screen'
+* Confirm by selecting 'Add'
+
+### On Android
+* Visit the following link in the Chrome app: https://teaching-artist-hub.herokuapp.com/
+* Select the 'More' icon on the top bar (three dots icon)
+* Select 'Add to Home Screen'
+* Confirm by selecting 'Add'
+* NOTE: Most Androids devices will automatically identify the link as a PWA and the user will be presented with the option to download the app.
+
+### On Desktop
+* Visit the following link in the Chrome or Edge app: https://teaching-artist-hub.herokuapp.com/
+* Select the install button in the address bar
+* Select 'Install'
+
+![Installing the PWA](./client/public/images/screenshots/Install-PWA.gif) / ! [](Install-PWA.gif)
 ## Testing
 ✏️ See deployed site to test functionality. 
 

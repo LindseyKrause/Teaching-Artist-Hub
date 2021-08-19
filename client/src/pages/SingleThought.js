@@ -28,7 +28,7 @@ const SingleThought = props => {
           <span style={{ fontWeight: 700 }} className="text-light">
             {thought.username}
           </span>{' '}
-          thought on {thought.createdAt}
+          post on {thought.createdAt}
         </p>
         <div className="card-body">
           <p>{thought.thoughtText}</p>

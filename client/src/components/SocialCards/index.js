@@ -6,7 +6,7 @@ import Card from "@material-ui/core/Card";
 // import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import FacebookInfo from "../Facebook";
-import TwitterInfo from "../Twitter";
+// import TwitterInfo from "../Twitter";
 import SpotifyInfo from "../Spotify";
 // import Button from '@material-ui/core/Button'; **TO DO (further development)
 
@@ -48,14 +48,14 @@ export default function SimpleCard() {
                 <Button size="small">Learn More</Button>
             </CardActions> */}
 			</Card>
-			<Card className={classes.root}>
+			{/* <Card className={classes.root}>
 				<CardContent>
 					<TwitterInfo></TwitterInfo>
 				</CardContent>
-				{/* <CardActions>
+				<CardActions>
                 <Button size="small">Learn More</Button>
-            </CardActions> */}
-			</Card>
+            </CardActions>
+			</Card> */}
 		</div>
 	);
 }

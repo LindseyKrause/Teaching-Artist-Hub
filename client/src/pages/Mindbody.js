@@ -4,6 +4,7 @@ import React from "react";
 
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
+import MBTooltip from "../components/Tooltip/tooltip";
 
 const useStyles = makeStyles((theme) => ({
 	Paper: {
@@ -29,9 +30,9 @@ const Mindbody = () => {
 	return (
 		<main>
 			<div className={classes.root}>
-				
 						<Paper className={classes.paper}>
-							Class Schedule
+					Class Schedule
+					<MBTooltip></MBTooltip>
 							<healcode-widget
 								data-type="schedules"
 								data-widget-partner="object"

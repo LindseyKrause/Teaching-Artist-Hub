@@ -29,8 +29,8 @@ export default function MBTooltip() {
     return (
         <div className={classes.div} >
             <Tooltip title={longText}>
-                <IconButton variant="outlined" size="small" color="secondary" aria-label="Tooltip-Classes not Showing?" className={classes.Iconbutton}>
-                    <HelpIcon>Classes Not Visible?</HelpIcon>
+                <IconButton variant="outlined" size="small" color="secondary" aria-label="Tooltip-Classes not Showing?" className={classes.Iconbutton}>Classes Not Showing
+                    <HelpIcon></HelpIcon>
                 </IconButton>
             </Tooltip>
         </div>

@@ -46,23 +46,13 @@ function App() {
 			<ThemeProvider theme={themeMode}>
 				<>
 					<GlobalStyles />
-					<Router>
+					<Router >
 						<div className="flex-column justify-flex-start min-100-vh">
 							<Header />
-							
+
 							<div className="container">
 								<div>
 									<Toggle theme={theme} toggleTheme={themeToggler} />
-									<img
-										src="https://i.imgur.com/ehPQscd.png"
-										alt="TAH Header"
-										style={{
-											minwidth: "50px",
-											minheight: "33px",
-											maxWidth: "250px",
-											maxHeight: "100px",
-										}}
-									></img>
 								</div>
 								<Switch>
 									<Route exact path="/" component={Mindbody} />

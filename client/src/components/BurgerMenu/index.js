@@ -53,7 +53,7 @@ export default function MainNavigation() {
   };
   return (
     <AppBar position="static" style={styleAppBar}>
-      <Container maxWidth="lg" >
+      <Container maxWidth="lg">
         <Toolbar>
           <IconButton
             edge="start"
@@ -72,18 +72,15 @@ export default function MainNavigation() {
             </IconButton>
             <IconButton>
             <Button variant="outlined" color="primary" style={{ color: "#e14eca" }}>
-            <SocialDrawer style={{ color: "#e14eca" }}></SocialDrawer>
+            <SocialDrawer style={{ color: "#e14eca"}}></SocialDrawer>
             </Button>
           </IconButton>
-          {/* <Link to="/">
-            <h1>Teaching Artist Hub</h1>
-          </Link> */}
-          <Button variant="outlined" color="primary" style={{ color: "#e14eca" }}>
+          <Button variant="outlined" color="primary" style={{ color: "#e14eca"}}>
             <a href="/" onClick={logout}>
             Logout
             </a>
           </Button>
-          <Box
+          <Box 
             component="div"
             sx={{
               display: {

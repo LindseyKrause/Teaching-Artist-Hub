@@ -2,7 +2,7 @@
 
 
 ## Description
-🔍Communications platform for non-profit arts organization.
+🔍Communications platform for non-profit arts organization. A professional and secure website that contracted teaching artists can log into to view announcements, resources, and forms; communicate with each other via forum; upload documentation; view social media feeds; and view a google calendar for the virtual class schedule.
 <br>   
 
 ## Built With
